@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 export const viewport: Viewport = { width: 'device-width', initialScale: 1, viewportFit: 'cover', themeColor: [{ media: '(prefers-color-scheme: light)', color: '#f4f4f9' }, { media: '(prefers-color-scheme: dark)', color: '#15121f' }] };
 
-/* Marks the page as scripted before it paints, so things that arrive on scroll start hidden only when there is a script to show them. */
-const SCRIPTED = "document.documentElement.classList.add('js')";
+/* Marks the page as scripted before it paints, so things that arrive on scroll start hidden only when there is a script to show them, and applies the Light or Dark choice a visitor made (kept on their own device only, never sent anywhere). */
+const SCRIPTED = "document.documentElement.classList.add('js');try{var t=localStorage.getItem('tilelabs-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

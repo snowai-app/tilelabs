@@ -370,7 +370,13 @@ dialog.cookies .btn { margin-top: 18px; }
 
 /* The language menu (T-3821): the family's dropdown, a globe, the code and a chevron, with a list of flag, name and code. Each choice is a link, so no cookie is needed. */
 .top .sp { flex: 1; }
-.top .lsw { margin-left: 4px; }
+.hdr-r { display: flex; align-items: center; gap: 8px; }
+.thm { display: inline-grid; place-items: center; width: 32px; height: 30px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 8px; cursor: pointer; padding: 0; }
+.thm:hover { border-color: var(--ink-3); }
+.thm:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.thm .i-sun { display: none; }
+:root[data-theme="dark"] .thm .i-sun { display: block; } :root[data-theme="dark"] .thm .i-moon { display: none; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .thm .i-sun { display: block; } :root:not([data-theme="light"]) .thm .i-moon { display: none; } }
 .lsw { position: relative; display: inline-flex; }
 .lsw-t { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; font-size: 13px; font-weight: 600; letter-spacing: 0.02em; padding: 5px 10px; border-radius: 8px; line-height: 1.2; cursor: pointer; }
 .lsw-t:hover { border-color: var(--ink-3); }
@@ -386,7 +392,7 @@ dialog.cookies .btn { margin-top: 18px; }
 .lsw-c { font-size: 12px; font-weight: 600; letter-spacing: .02em; color: var(--ink-3); }
 .lsw-f { flex: none; border-radius: 2px; }
 footer .lsw { margin-left: 6px; }
-@media (max-width: 560px) { .top .lsw { margin-left: auto; } }
+@media (max-width: 560px) { .top .hdr-r { margin-left: auto; } }
 /* Devanagari and Chinese fall back to the device's own faces: this site loads no outside fonts. */
 [lang="hi"], [lang="zh-Hans"] { --font-display: system-ui, -apple-system, "Segoe UI", "Noto Sans Devanagari", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; --font-body: system-ui, -apple-system, "Segoe UI", "Noto Sans Devanagari", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; }
 [lang="hi"] h1, [lang="hi"] h2, [lang="hi"] h3, [lang="zh-Hans"] h1, [lang="zh-Hans"] h2, [lang="zh-Hans"] h3 { line-height: 1.22; letter-spacing: 0; }

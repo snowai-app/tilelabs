@@ -1,5 +1,6 @@
 import { Brand } from './Bits';
 import LangMenu from './LangMenu';
+import ThemeSwitch from './ThemeSwitch';
 import { SITE } from '@/lib/site-words';
 import type { Lang } from '@/lib/legal-words';
 
@@ -12,7 +13,7 @@ export default function Header({ lang }: { lang: Lang }) {
         <nav aria-label={S.navAria}>
           <a href="#what">{S.nav[0]}</a><a href="#how">{S.nav[1]}</a><a href="#products">{S.nav[2]}</a><a href="#talk">{S.nav[3]}</a>
         </nav>
-        <LangMenu lang={lang} doc="home" />
+        <div className="hdr-r"><ThemeSwitch lang={lang} /><LangMenu lang={lang} doc="home" /></div>
       </div>
     </header>
   );

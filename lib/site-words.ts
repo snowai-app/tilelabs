@@ -6,6 +6,7 @@ import type { Lang } from './legal-words.ts';
 export type Site = {
   meta: { title: string; description: string };
   navAria: string;
+  theme: { label: string; light: string; dark: string };
   nav: [string, string, string, string];
   hero: { eyebrow: string; h1a: string; h1b: string; lede: string; portfolio: string; talk: string; stageTag: string; pause: string; play: string; pauseAria: string; playAria: string };
   what: { label: string; h: string; intro: string; cards: [{ h: string; p: string }, { h: string; p: string }, { h: string; p: string }]; goals: [string, string, string]; brandsAria: string; spec: [string, string, string, string] };
@@ -20,6 +21,7 @@ export const SITE: Record<Lang, Site> = {
   en: {
     meta: { title: 'Tile Labs: software, cut to fit', description: 'Tile Labs makes software products, white-label versions that wear your brand, and custom software built to your specification.' },
     navAria: 'Sections',
+    theme: { label: 'Light or dark', light: 'Switch to light', dark: 'Switch to dark' },
     nav: ['What we do', 'How we work', 'Products', 'Talk to us'],
     hero: { eyebrow: 'Software studio', h1a: 'Software,', h1b: 'cut to fit.', lede: 'Tile Labs makes software products, white-label versions that wear your brand, and custom software built to your specification.', portfolio: 'Portfolio', talk: 'Talk to us', stageTag: 'Press a tile to see what it does', pause: 'Pause', play: 'Play', pauseAria: 'Pause the motion', playAria: 'Play the motion' },
     what: {
@@ -51,6 +53,7 @@ export const SITE: Record<Lang, Site> = {
   es: {
     meta: { title: 'Tile Labs: software a su medida', description: 'Tile Labs crea productos de software, versiones de marca blanca que llevan su marca y software a medida según sus especificaciones.' },
     navAria: 'Secciones',
+    theme: { label: 'Claro u oscuro', light: 'Cambiar a claro', dark: 'Cambiar a oscuro' },
     nav: ['Lo que hacemos', 'Cómo trabajamos', 'Productos', 'Hable con nosotros'],
     hero: { eyebrow: 'Estudio de software', h1a: 'Software,', h1b: 'a su medida.', lede: 'Tile Labs crea productos de software, versiones de marca blanca que llevan su marca y software a medida según sus especificaciones.', portfolio: 'Portafolio', talk: 'Hable con nosotros', stageTag: 'Pulse una pieza para ver qué hace', pause: 'Pausar', play: 'Reanudar', pauseAria: 'Pausar el movimiento', playAria: 'Reanudar el movimiento' },
     what: {
@@ -82,6 +85,7 @@ export const SITE: Record<Lang, Site> = {
   hi: {
     meta: { title: 'Tile Labs: आपके नाप का सॉफ़्टवेयर', description: 'Tile Labs सॉफ़्टवेयर उत्पाद बनाती है, व्हाइट-लेबल संस्करण जो आपका ब्रांड पहनते हैं, और आपकी विशिष्टताओं के अनुसार कस्टम सॉफ़्टवेयर।' },
     navAria: 'अनुभाग',
+    theme: { label: 'हल्का या गहरा', light: 'हल्के रंग पर जाएँ', dark: 'गहरे रंग पर जाएँ' },
     nav: ['हम क्या करते हैं', 'हम कैसे काम करते हैं', 'उत्पाद', 'हमसे बात करें'],
     hero: { eyebrow: 'सॉफ़्टवेयर स्टूडियो', h1a: 'सॉफ़्टवेयर,', h1b: 'आपके नाप का।', lede: 'Tile Labs सॉफ़्टवेयर उत्पाद बनाती है, व्हाइट-लेबल संस्करण जो आपका ब्रांड पहनते हैं, और आपकी विशिष्टताओं के अनुसार कस्टम सॉफ़्टवेयर।', portfolio: 'पोर्टफ़ोलियो', talk: 'हमसे बात करें', stageTag: 'किसी टाइल को दबाकर देखें कि वह क्या करती है', pause: 'रोकें', play: 'चलाएँ', pauseAria: 'गति रोकें', playAria: 'गति चलाएँ' },
     what: {
@@ -113,6 +117,7 @@ export const SITE: Record<Lang, Site> = {
   zh: {
     meta: { title: 'Tile Labs：量身定制的软件', description: 'Tile Labs 制作软件产品、贴上您品牌的白标版本，以及按您的要求定制的软件。' },
     navAria: '栏目',
+    theme: { label: '浅色或深色', light: '切换到浅色', dark: '切换到深色' },
     nav: ['我们做什么', '我们如何合作', '产品', '联系我们'],
     hero: { eyebrow: '软件工作室', h1a: '软件，', h1b: '量身定制。', lede: 'Tile Labs 制作软件产品、贴上您品牌的白标版本，以及按您的要求定制的软件。', portfolio: '作品集', talk: '联系我们', stageTag: '点按一块瓷砖，看看它能做什么', pause: '暂停', play: '播放', pauseAria: '暂停动画', playAria: '播放动画' },
     what: {
