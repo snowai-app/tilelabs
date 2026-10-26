@@ -3,8 +3,7 @@
 :root {
   --bg: #f4f4f9; --surface: #ffffff; --ink: #19192b; --ink-2: #4b4b66; --ink-3: #7d7d96; --line: #e4e4ee;
   --tile: #e8e6f3; --tile-2: #dedbee; --accent: #5e2ced; --accent-ink: #ffffff; --accent-soft: #efe9ff;
-  --hot-bg: #efe9ff; --hot-ink: #4a1fd0;
-  --g1: #5e2ced; --g2: #8a63f5; --g3: #3a1d8a; --g4: #4a1fd0;
+  --g1: #1741c4; --g2: #0e8f8a; --g3: #f2b134; --g4: #d9455f;
   --font-display: "Bricolage Grotesque Variable", "Hanken Grotesk Variable", system-ui, sans-serif;
   --font-body: "Hanken Grotesk Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -14,15 +13,13 @@
   :root:not([data-theme="light"]) {
     --bg: #15121f; --surface: #1f1b2e; --ink: #f0ecfa; --ink-2: #c9c3dc; --ink-3: #978fb0; --line: #302b45;
     --tile: #2a2540; --tile-2: #332d4d; --accent: #a88bff; --accent-ink: #15121f; --accent-soft: #2a2347;
-    --hot-bg: #2a2347; --hot-ink: #c2adff;
-    --g1: #7c5cf0; --g2: #6a48e0; --g3: #5230c0; --g4: #8f6df5; color-scheme: dark;
+    --g1: #4c74f0; --g2: #2bb8b0; --g3: #f5c04d; --g4: #f0708a; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #15121f; --surface: #1f1b2e; --ink: #f0ecfa; --ink-2: #c9c3dc; --ink-3: #978fb0; --line: #302b45;
   --tile: #2a2540; --tile-2: #332d4d; --accent: #a88bff; --accent-ink: #15121f; --accent-soft: #2a2347;
-  --hot-bg: #2a2347; --hot-ink: #c2adff;
-  --g1: #7c5cf0; --g2: #6a48e0; --g3: #5230c0; --g4: #8f6df5; color-scheme: dark;
+  --g1: #4c74f0; --g2: #2bb8b0; --g3: #f5c04d; --g4: #f0708a; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -166,7 +163,7 @@ section { padding-block: clamp(44px, 7vw, 96px); }
 .scr .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 13px; font-weight: 500; }
 .scr .row:first-of-type { border-top: 0; }
 .scr .pill { font-size: 11px; font-weight: 600; padding: 4px 9px; border-radius: 999px; background: var(--tile); color: var(--ink-2); white-space: nowrap; }
-.scr .pill.hot { background: var(--hot-bg); color: var(--hot-ink); animation: nudge 3.2s ease-in-out infinite; }
+.scr .pill.hot { background: var(--g3); color: #1a1405; animation: nudge 3.2s ease-in-out infinite; }
 @keyframes nudge { 0%, 60%, 100% { transform: none; } 70% { transform: scale(1.14); } 80% { transform: scale(.96); } 90% { transform: scale(1.04); } }
 .scr .bars { height: 70px; display: flex; align-items: flex-end; gap: 7px; }
 .scr .bars i { flex: 1; border-radius: 5px 5px 2px 2px; background: var(--g1); transform-origin: bottom; animation: grow 6s ease-in-out infinite; }
