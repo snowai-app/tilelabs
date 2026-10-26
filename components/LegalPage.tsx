@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { Brand } from './Bits';
 import Footer from './Footer';
 import LangMenu from './LangMenu';
+import ThemeSwitch from './ThemeSwitch';
 import { COMPANY } from '@/lib/company';
 import { FRAME, pathFor, type Lang } from '@/lib/legal-words';
 
@@ -15,7 +16,7 @@ export default function LegalPage({ lang, doc, title, children }: { lang: Lang; 
         <div className="wrap">
           <Brand href={pathFor(lang, 'home')} label={f.homeAria} />
           <span className="sp" />
-          <LangMenu lang={lang} doc={doc} />
+          <div className="hdr-r"><ThemeSwitch lang={lang} /><LangMenu lang={lang} doc={doc} /></div>
         </div>
       </header>
       <main className="lp wrap" id="top">
