@@ -6,8 +6,10 @@ export const KINDS: Record<string, string> = { product: 'A product', white: 'Whi
 
 export const validEmail = (value: string) => /^\S+@\S+\.\S+$/.test(value.trim());
 
-export function mailtoFor(kind: string, name: string, email: string, msg: string): string {
+/* The address that gets the mail reads English, so the labels stay English; the language the visitor was reading, when it is not English, is added to the subject so a reply can be in it. */
+export function mailtoFor(kind: string, name: string, email: string, msg: string, lang = 'en'): string {
   const what = KINDS[kind] ?? KINDS.product;
+  const tag = lang === 'en' ? '' : ` [${lang}]`;
   const body = [`Looking for: ${what}`, `Name: ${name.trim()}`, `Email: ${email.trim()}`, '', msg.trim()].join('\n');
-  return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`Tile Labs: ${what}`)}&body=${encodeURIComponent(body)}`;
+  return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`Tile Labs: ${what}${tag}`)}&body=${encodeURIComponent(body)}`;
 }

@@ -1,13 +1,18 @@
 import { Brand } from './Bits';
+import LangMenu from './LangMenu';
+import { SITE } from '@/lib/site-words';
+import type { Lang } from '@/lib/legal-words';
 
-export default function Header() {
+export default function Header({ lang }: { lang: Lang }) {
+  const S = SITE[lang];
   return (
     <header className="top">
       <div className="wrap">
         <Brand />
-        <nav aria-label="Sections">
-          <a href="#what">What we do</a><a href="#how">How we work</a><a href="#products">Products</a><a href="#talk">Talk to us</a>
+        <nav aria-label={S.navAria}>
+          <a href="#what">{S.nav[0]}</a><a href="#how">{S.nav[1]}</a><a href="#products">{S.nav[2]}</a><a href="#talk">{S.nav[3]}</a>
         </nav>
+        <LangMenu lang={lang} doc="home" />
       </div>
     </header>
   );

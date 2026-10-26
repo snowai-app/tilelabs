@@ -146,8 +146,10 @@ export const TERMS: Record<Lang, Block[]> = {
   ],
 };
 
-/** The address of a legal page in a language: English has no prefix, the others do (/es/privacy). */
-export const legalPath = (lang: Lang, doc: 'privacy' | 'terms') => (lang === 'en' ? `/${doc}` : `/${lang}/${doc}`);
+/** The address of a page in a language: English has no prefix, the others do (/es, /es/privacy). */
+export type Doc = 'home' | 'privacy' | 'terms';
+export const pathFor = (lang: Lang, doc: Doc) => (doc === 'home' ? (lang === 'en' ? '/' : `/${lang}`) : lang === 'en' ? `/${doc}` : `/${lang}/${doc}`);
+export const legalPath = (lang: Lang, doc: 'privacy' | 'terms') => pathFor(lang, doc);
 
 /** The slots a paragraph may use. */
 export const SLOTS = ['mail', 'privacy', 'snowPrivacy', 'snowTerms'] as const;
@@ -161,6 +163,6 @@ export function fill(p: string, lang: Lang): string {
 }
 
 /** hreflang for a page: each language's own address. */
-export const alternates = (doc: 'privacy' | 'terms') => ({
-  languages: Object.fromEntries(LANGS.map((l) => [l === 'zh' ? 'zh-Hans' : l, legalPath(l, doc)])),
+export const alternates = (doc: Doc) => ({
+  languages: Object.fromEntries(LANGS.map((l) => [l === 'zh' ? 'zh-Hans' : l, pathFor(l, doc)])),
 });
