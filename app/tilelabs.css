@@ -363,3 +363,17 @@ dialog.cookies .btn { margin-top: 18px; }
 .lp h1 { margin-bottom: 10px; }
 .lp h2 { margin-bottom: 6px; }
 .lp p { margin: 0 0 12px; }
+
+/* The language switch on the legal pages (T-3820): the family's EN | ES | HI pill group, made of links so no cookie is needed. */
+.top .sp { flex: 1; }
+.lsw { display: inline-flex; align-items: center; gap: 3px; font-size: 12.5px; white-space: nowrap; }
+.lsw-item { display: inline-flex; align-items: center; gap: 3px; }
+.lsw-sep { color: var(--ink-3); }
+.lsw-b { border: 1px solid var(--line); color: var(--ink-2); font-weight: 600; letter-spacing: 0.02em; padding: 3px 7px; border-radius: 6px; line-height: 1.2; text-decoration: none; }
+.lsw-b:hover { color: var(--ink); border-color: var(--ink-3); }
+.lsw-b.is-on { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.lsw-b:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+/* Devanagari and Chinese fall back to the device's own faces: this site loads no outside fonts. */
+[lang="hi"] .lp, [lang="zh-Hans"] .lp { font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans Devanagari", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; }
+[lang="hi"] .lp h1, [lang="hi"] .lp h2, [lang="zh-Hans"] .lp h1, [lang="zh-Hans"] .lp h2 { font-family: inherit; }
+@media print { .lsw { display: none; } }
