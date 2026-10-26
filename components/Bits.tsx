@@ -16,9 +16,9 @@ export function Arrow() {
   );
 }
 
-export function Brand({ href = '#top' }: { href?: string }) {
+export function Brand({ href = '#top', label }: { href?: string; label?: string }) {
   return (
-    <a className="brand" href={href} aria-label={href === '#top' ? 'Tile Labs, top of page' : 'Tile Labs, home'}>
+    <a className="brand" href={href} aria-label={label ?? (href === '#top' ? 'Tile Labs, top of page' : 'Tile Labs, home')}>
       <Mark />Tile Labs
     </a>
   );
