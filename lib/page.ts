@@ -1,5 +1,8 @@
-import { PRODUCTS } from './products.ts';
+import { PRODUCTS as BASE_PRODUCTS } from './products.ts';
 import { frameHtml } from './frames.ts';
+import { localizeProducts } from './localize.ts';
+import { SITE } from './site-words.ts';
+import type { Lang } from './legal-words.ts';
 
 /* Everything on the page that moves or answers a press, in one place. `initPage` finds what the server drew by its ids and
    classes, wires it, and returns a function that undoes it all. Nothing here sends anything anywhere. */
@@ -9,7 +12,9 @@ type Tile = { i: number; c: number; r: number; x: number; y: number; g: number; 
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string): T => document.getElementById(id) as T;
 
-export function initPage(): () => void {
+export function initPage(lang: Lang = 'en'): () => void {
+  const S = SITE[lang];
+  const PRODUCTS = localizeProducts(BASE_PRODUCTS, lang);
   const undo: (() => void)[] = [];
   const on = <K extends keyof HTMLElementEventMap>(el: EventTarget, type: K | string, fn: (e: never) => void, opts?: AddEventListenerOptions) => {
     el.addEventListener(type, fn as EventListener, opts);
@@ -28,8 +33,8 @@ export function initPage(): () => void {
     motionOn = next;
     body.setAttribute('data-motion', next ? 'on' : 'off');
     pauseBtn.setAttribute('aria-pressed', next ? 'false' : 'true');
-    pauseBtn.setAttribute('aria-label', next ? 'Pause the motion' : 'Play the motion');
-    pauseText.textContent = next ? 'Pause' : 'Play';
+    pauseBtn.setAttribute('aria-label', next ? S.hero.pauseAria : S.hero.playAria);
+    pauseText.textContent = next ? S.hero.pause : S.hero.play;
     mosaic?.setRunning(next);
     const v = document.querySelector<HTMLVideoElement>('#dVideo video');
     if (v) { if (next) v.play().catch(() => {}); else v.pause(); }
@@ -92,7 +97,7 @@ export function initPage(): () => void {
         const b = document.createElement('button');
         b.type = 'button';
         b.className = 'pk';
-        b.setAttribute('aria-label', `${PRODUCTS[i].n}, ${PRODUCTS[i].tag.toLowerCase()}. See a demo.`);
+        b.setAttribute('aria-label', S.demo.seeDemo.replace('{n}', PRODUCTS[i].n).replace('{tag}', PRODUCTS[i].tag.toLowerCase()));
         Object.assign(b.style, { left: `${tiles[i].x}px`, top: `${tiles[i].y}px`, width: `${size}px`, height: `${size}px` });
         b.addEventListener('click', () => { const tl = tiles[i]; if (tl.flip < 0) tl.flip = 0; openDemo(i, b); });
         stage.appendChild(b);
@@ -173,9 +178,9 @@ export function initPage(): () => void {
 
   /* ---------- the white-label example: one product, three brands ---------- */
   const brands = [
-    { n: 'Harbor Pizza', l: 'H', a: '#0e7c7b', u: 'app.harborpizza.example', g: 'Order now' },
-    { n: 'Northside Fitness', l: 'N', a: '#c2410c', u: 'members.northside.example', g: 'Book a class' },
-    { n: 'Brightwell Clinic', l: 'B', a: '#3d7a3a', u: 'portal.brightwell.example', g: 'See my plan' },
+    { n: 'Harbor Pizza', l: 'H', a: '#0e7c7b', u: 'app.harborpizza.example', g: S.what.goals[0] },
+    { n: 'Northside Fitness', l: 'N', a: '#c2410c', u: 'members.northside.example', g: S.what.goals[1] },
+    { n: 'Brightwell Clinic', l: 'B', a: '#3d7a3a', u: 'portal.brightwell.example', g: S.what.goals[2] },
   ];
   const wl = $('wl'), pick = Array.from(document.querySelectorAll<HTMLButtonElement>('.wl-pick button'));
   let cur = 0, hold = false;
@@ -209,7 +214,7 @@ export function initPage(): () => void {
   const dlg = $<HTMLDialogElement>('demo');
   let dCur = 0, dStep = 0, dAuto = true, dTimer = 0, dOpener: HTMLElement | null = null;
   function syncAuto() {
-    $('dAuto').textContent = dAuto ? 'Pause' : 'Play';
+    $('dAuto').textContent = dAuto ? S.demo.pause : S.demo.play;
     $('dAct').classList.toggle('cue', dAuto && motionOn);
     clearInterval(dTimer);
     if (dAuto && motionOn) dTimer = window.setInterval(advance, 3400);
@@ -217,7 +222,7 @@ export function initPage(): () => void {
   function showStep(n: number) {
     const pr = PRODUCTS[dCur], f = pr.fr[n];
     dStep = n;
-    $('dFrame').innerHTML = frameHtml(f);
+    $('dFrame').innerHTML = frameHtml(f, { signHere: S.demo.signHere, paid: S.demo.paid });
     $('dCap').textContent = f.cap;
     const act = $<HTMLButtonElement>('dAct');
     act.hidden = !f.act; act.textContent = f.act || ''; act.className = 'go2' + (dAuto && motionOn ? ' cue' : '');
@@ -226,7 +231,7 @@ export function initPage(): () => void {
     pr.fr.forEach((_, i) => {
       const b = document.createElement('button');
       b.type = 'button';
-      b.setAttribute('aria-label', `Step ${i + 1}`);
+      b.setAttribute('aria-label', S.demo.step.replace('{n}', String(i + 1)));
       if (i === n) b.setAttribute('aria-current', 'true');
       b.addEventListener('click', () => { dAuto = false; syncAuto(); showStep(i); });
       dots.appendChild(b);
@@ -244,7 +249,7 @@ export function initPage(): () => void {
     if (pr.video) {
       const v = document.createElement('video');
       v.muted = true; v.loop = true; v.controls = true; v.playsInline = true; v.preload = 'auto';
-      v.setAttribute("aria-label", `${pr.n} demo video, 15 seconds, no sound`);
+      v.setAttribute("aria-label", S.demo.videoAria.replace('{n}', pr.n));
       for (const [ext, type] of [['mp4', 'video/mp4'], ['webm', 'video/webm']]) { const so = document.createElement('source'); so.src = `/${pr.video}.${ext}`; so.type = type; v.appendChild(so); }
       vbox.appendChild(v);
       if (motionOn) v.play().catch(() => {});
@@ -264,7 +269,7 @@ export function initPage(): () => void {
     const k1 = document.getElementById('k1') as HTMLInputElement | null;
     if (k1) k1.checked = true;
     const m = document.getElementById('fmsg') as HTMLTextAreaElement | null;
-    if (m && !m.value) m.value = `I would like to see ${PRODUCTS[dCur].n}.`;
+    if (m && !m.value) m.value = S.demo.wish.replace('{n}', PRODUCTS[dCur].n);
   });
   undo.push(() => clearInterval(dTimer));
 

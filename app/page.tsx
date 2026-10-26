@@ -1,29 +1,9 @@
-import Behaviour from '@/components/Behaviour';
-import DemoDialog from '@/components/DemoDialog';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import How from '@/components/How';
-import Products from '@/components/Products';
-import Promises from '@/components/Promises';
-import Talk from '@/components/Talk';
-import What from '@/components/What';
+import type { Metadata } from 'next';
+import Home from '@/components/Home';
+import { alternates } from '@/lib/legal-words';
 
-export default function Home() {
-  return (
-    <>
-      <Header />
-      <main id="top">
-        <Hero />
-        <What />
-        <How />
-        <Products />
-        <Promises />
-        <Talk />
-      </main>
-      <Footer />
-      <DemoDialog />
-      <Behaviour />
-    </>
-  );
+export const metadata: Metadata = { alternates: alternates('home') };
+
+export default function Page() {
+  return <Home lang="en" />;
 }

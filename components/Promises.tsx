@@ -1,16 +1,20 @@
-export default function Promises() {
+import { SITE } from '@/lib/site-words';
+import type { Lang } from '@/lib/legal-words';
+
+export default function Promises({ lang }: { lang: Lang }) {
+  const P = SITE[lang].promises;
   return (
     <section>
       <div className="wrap">
         <div className="head" data-reveal>
-          <span className="mono">In every product</span>
-          <h2>What you get whichever one you choose.</h2>
+          <span className="mono">{P.label}</span>
+          <h2>{P.h}</h2>
         </div>
         <div className="four">
-          <div className="mini" data-reveal><div className="glyph"><span className="seal">•••• 4821</span></div><h3>Private by default</h3><p>Health details, IDs and bank numbers are kept sealed, and every time someone opens one, it is logged.</p></div>
-          <div className="mini" data-reveal><div className="glyph lang"><span>EN</span><span>ES</span><span>HI</span></div><h3>In your language</h3><p>English, Spanish and Hindi today, with more added for every product at once.</p></div>
-          <div className="mini" data-reveal><div className="glyph"><div className="sso"><i /><i /><i /><b /></div></div><h3>One sign-in</h3><p>Sign in once and move between products without signing in again.</p></div>
-          <div className="mini" data-reveal><div className="glyph"><div className="upd"><span>Up to date</span><div><i /></div></div></div><h3>Always current</h3><p>Improvements reach you as soon as they are ready, with nothing to install.</p></div>
+          <div className="mini" data-reveal><div className="glyph"><span className="seal">•••• 4821</span></div><h3>{P.cards[0].h}</h3><p>{P.cards[0].p}</p></div>
+          <div className="mini" data-reveal><div className="glyph lang"><span>EN</span><span>ES</span><span>HI</span></div><h3>{P.cards[1].h}</h3><p>{P.cards[1].p}</p></div>
+          <div className="mini" data-reveal><div className="glyph"><div className="sso"><i /><i /><i /><b /></div></div><h3>{P.cards[2].h}</h3><p>{P.cards[2].p}</p></div>
+          <div className="mini" data-reveal><div className="glyph"><div className="upd"><span>{P.upd}</span><div><i /></div></div></div><h3>{P.cards[3].h}</h3><p>{P.cards[3].p}</p></div>
         </div>
       </div>
     </section>

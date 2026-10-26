@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Tile Labs: software, cut to fit',
   description: 'Tile Labs makes software products, white-label versions that wear your brand, and custom software built to your specification.',
 };
-export const viewport: Viewport = { width: 'device-width', initialScale: 1, viewportFit: 'cover', themeColor: [{ media: '(prefers-color-scheme: light)', color: '#edf0f3' }, { media: '(prefers-color-scheme: dark)', color: '#0b121b' }] };
+export const viewport: Viewport = { width: 'device-width', initialScale: 1, viewportFit: 'cover', themeColor: [{ media: '(prefers-color-scheme: light)', color: '#f4f4f9' }, { media: '(prefers-color-scheme: dark)', color: '#15121f' }] };
 
 /* Marks the page as scripted before it paints, so things that arrive on scroll start hidden only when there is a script to show them. */
 const SCRIPTED = "document.documentElement.classList.add('js')";

@@ -1,0 +1,257 @@
+For shops ||| Para tiendas ||| दुकानों के लिए ||| 面向商店
+A short list each morning for a shop: what to mark down, what to reorder, and who has stopped coming. ||| Una lista corta cada mañana para una tienda: qué rebajar, qué volver a pedir y quién ha dejado de venir. ||| दुकान के लिए हर सुबह एक छोटी सूची: क्या सस्ता करना है, क्या दोबारा मँगवाना है और कौन आना बंद कर चुका है। ||| 每天早上为商店列出一份简短清单：哪些该降价、哪些该补货，以及哪些顾客不再光顾。
+Grocery stores, pizza shops, any shop with stock that goes off. ||| Tiendas de comestibles, pizzerías y cualquier tienda con productos que caducan. ||| किराना दुकानें, पिज़्ज़ा की दुकानें, और कोई भी दुकान जिसका माल खराब हो जाता है। ||| 杂货店、披萨店，以及任何有易变质库存的商店。
+Stock this morning ||| Existencias de esta mañana ||| आज सुबह का स्टॉक ||| 今早的库存
+Mark down the milk ||| Rebajar la leche ||| दूध का दाम घटाएँ ||| 给牛奶降价
+The day’s list, worked out from what is on the shelf. ||| La lista del día, calculada a partir de lo que hay en el estante. ||| आज की सूची, जो शेल्फ़ पर रखे माल के आधार पर बनती है। ||| 当天的清单，根据货架上的商品算出。
+Whole milk ||| Leche entera ||| फुल क्रीम दूध ||| 全脂牛奶
+Expires soon ||| Caduca pronto ||| जल्द खराब होगा ||| 即将过期
+Sourdough ||| Pan de masa madre ||| सावरडो ब्रेड ||| 酸面包
+Fine ||| Bien ||| ठीक है ||| 正常
+Bananas ||| Plátanos ||| केले ||| 香蕉
+Reorder ||| Volver a pedir ||| दोबारा मँगवाएँ ||| 补货
+Approve the reorder ||| Aprobar el nuevo pedido ||| दोबारा मँगवाने को मंज़ूरी दें ||| 批准补货
+Each suggestion says why it is there, and waits for your yes. ||| Cada sugerencia explica por qué está ahí y espera su aprobación. ||| हर सुझाव बताता है कि वह क्यों है, और आपकी हाँ का इंतज़ार करता है। ||| 每条建议都会说明理由，并等待您点头。
+Marked down ||| Rebajado ||| दाम घटाया गया ||| 已降价
+Done for today ||| Listo por hoy ||| आज का काम पूरा ||| 今日完成
+Nothing changes at the till, or goes out, without your yes. ||| Nada cambia en la caja ni sale al exterior sin su aprobación. ||| आपकी हाँ के बिना न काउंटर पर कुछ बदलता है, न कुछ बाहर जाता है। ||| 没有您的同意，收银台不会有任何改动，也不会发出任何内容。
+Milk marked down ||| Leche rebajada ||| दूध का दाम घटाया गया ||| 牛奶已降价
+Reorder drafted ||| Pedido preparado ||| दोबारा मँगवाने का मसौदा बना ||| 补货单已起草
+A special ready to approve ||| Una oferta lista para aprobar ||| एक ख़ास ऑफ़र मंज़ूरी के लिए तैयार ||| 一项特价优惠待批准
+Marketing ||| Marketing ||| मार्केटिंग ||| 营销
+Messages to the right customers at the right time, written once and personal to each. ||| Mensajes a los clientes adecuados en el momento adecuado, escritos una vez y personales para cada uno. ||| सही ग्राहकों को सही समय पर संदेश, एक बार लिखे हुए और हर किसी के लिए व्यक्तिगत। ||| 在合适的时间把消息发给合适的客户，写一次，对每个人都显得个性化。
+Any business that talks to its customers. ||| Cualquier negocio que se comunica con sus clientes. ||| कोई भी व्यवसाय जो अपने ग्राहकों से बात करता है। ||| 任何与客户保持沟通的企业。
+New message ||| Mensaje nuevo ||| नया संदेश ||| 新消息
+Preview it ||| Vista previa ||| पूर्वावलोकन देखें ||| 预览
+Pick a group, say it once. ||| Elija un grupo, dígalo una vez. ||| एक समूह चुनें, बस एक बार कहें। ||| 选一个群组，只说一次。
+To ||| Para ||| प्रति ||| 收件人
+Regulars ||| Clientes habituales ||| नियमित ग्राहक ||| 常客
+Say ||| Mensaje ||| संदेश ||| 内容
+Thank you for coming back, {first name}. ||| Gracias por volver, {nombre}. ||| वापस आने के लिए धन्यवाद, {पहला नाम}। ||| 感谢您再次光临，{名字}。
+What Sam sees ||| Lo que ve Sam ||| Sam को क्या दिखता है ||| Sam 看到的内容
+Approve and send ||| Aprobar y enviar ||| मंज़ूर करें और भेजें ||| 批准并发送
+Every message is made personal, and you approve it first. ||| Cada mensaje se personaliza y usted lo aprueba primero. ||| हर संदेश व्यक्तिगत बनाया जाता है, और पहले आप उसे मंज़ूर करते हैं। ||| 每条消息都会个性化，并且先由您批准。
+Thank you for coming back, Sam. ||| Gracias por volver, Sam. ||| वापस आने के लिए धन्यवाद, Sam। ||| 感谢您再次光临，Sam。
+Here is a little something for you. ||| Aquí tiene un pequeño detalle para usted. ||| यह रहा आपके लिए एक छोटा सा तोहफ़ा। ||| 这是送给您的一点小心意。
+Replies this week ||| Respuestas de esta semana ||| इस सप्ताह के जवाब ||| 本周回复
+You see who answered, and what worked. ||| Usted ve quién respondió y qué funcionó. ||| आप देखते हैं कि किसने जवाब दिया और क्या कारगर रहा। ||| 您能看到谁回复了，以及什么有效。
+Signatures ||| Firmas ||| हस्ताक्षर ||| 签名
+Send a document to be signed by someone outside your account, and keep what was said. ||| Envíe un documento para que lo firme alguien ajeno a su cuenta y conserve lo que se dijo. ||| किसी ऐसे व्यक्ति को दस्तावेज़ हस्ताक्षर के लिए भेजें जो आपके खाते में नहीं है, और जो कहा गया उसका रिकॉर्ड रखें। ||| 把文件发给您账户之外的人签署，并留存当时的记录。
+Agencies, firms and anyone who needs a signature. ||| Agencias, despachos y cualquiera que necesite una firma. ||| एजेंसियाँ, फ़र्म और कोई भी जिसे हस्ताक्षर चाहिए। ||| 代理机构、事务所，以及任何需要签名的人。
+Service agreement ||| Contrato de servicios ||| सेवा अनुबंध ||| 服务协议
+Sign here ||| Firme aquí ||| यहाँ हस्ताक्षर करें ||| 在此签名
+The signer opens a link. No account needed. ||| El firmante abre un enlace. No necesita cuenta. ||| हस्ताक्षर करने वाला एक लिंक खोलता है। खाते की ज़रूरत नहीं। ||| 签署人打开一个链接即可，无需账户。
+Send it back ||| Devolverlo ||| वापस भेजें ||| 发回
+Draw it, type it or upload it. ||| Dibújela, escríbala o súbala. ||| इसे बनाएँ, टाइप करें या अपलोड करें। ||| 手写、键入或上传均可。
+Signed and filed ||| Firmado y archivado ||| हस्ताक्षरित और फ़ाइल किया गया ||| 已签署并归档
+Who saw what, and when, is kept. ||| Se conserva quién vio qué y cuándo. ||| किसने क्या देखा और कब, इसका रिकॉर्ड रखा जाता है। ||| 谁在何时看了什么，都有记录。
+Signed by Sam ||| Firmado por Sam ||| Sam ने हस्ताक्षर किए ||| Sam 已签署
+Copy kept with the record ||| Copia guardada con el expediente ||| प्रति रिकॉर्ड के साथ रखी गई ||| 副本已与档案一并保存
+Sent back to you ||| Devuelto a usted ||| आपको वापस भेजा गया ||| 已发回给您
+Files ||| Archivos ||| फ़ाइलें ||| 文件
+One place for every document, filed in the right folder, with every version kept. ||| Un solo lugar para cada documento, archivado en la carpeta correcta y con todas las versiones guardadas. ||| हर दस्तावेज़ के लिए एक जगह, सही फ़ोल्डर में रखा हुआ, और हर संस्करण सहेजा हुआ। ||| 所有文件集中一处，归入正确的文件夹，并保留每个版本。
+Anyone who loses time looking for a file. ||| Cualquiera que pierde tiempo buscando un archivo. ||| कोई भी जो फ़ाइल ढूँढने में समय गँवाता है। ||| 任何为找文件而浪费时间的人。
+Folders ||| Carpetas ||| फ़ोल्डर ||| 文件夹
+Drop in a file ||| Suelte un archivo ||| कोई फ़ाइल डालें ||| 放入一个文件
+Every document has a folder. ||| Cada documento tiene su carpeta. ||| हर दस्तावेज़ का एक फ़ोल्डर होता है। ||| 每份文件都有自己的文件夹。
+Contracts ||| Contratos ||| अनुबंध ||| 合同
+Open ||| Abrir ||| खोलें ||| 打开
+Forms ||| Formularios ||| फ़ॉर्म ||| 表格
+Receipts ||| Recibos ||| रसीदें ||| 收据
+Share it ||| Compartirlo ||| साझा करें ||| 分享
+It reads the file and files it where it belongs. ||| Lee el archivo y lo guarda donde corresponde. ||| यह फ़ाइल पढ़ता है और उसे सही जगह रख देता है। ||| 它会读取文件，并归入应在的位置。
+Lease.pdf ||| Alquiler.pdf ||| पट्टा.pdf ||| 租约.pdf
+Filed in Contracts ||| Archivado en Contratos ||| अनुबंध में रखा गया ||| 已归入“合同”
+Shared by link ||| Compartido por enlace ||| लिंक से साझा किया ||| 已通过链接分享
+Every opening is logged. ||| Cada apertura queda registrada. ||| हर बार खोले जाने का रिकॉर्ड रखा जाता है। ||| 每次打开都有记录。
+Link made ||| Enlace creado ||| लिंक बन गया ||| 链接已创建
+Ends on Friday ||| Termina el viernes ||| शुक्रवार को समाप्त ||| 周五到期
+Opened once ||| Abierto una vez ||| एक बार खोला गया ||| 已打开一次
+For clients ||| Para clientes ||| ग्राहकों के लिए ||| 面向客户
+A client’s own place for their documents, their to-dos and what you send them. ||| El espacio propio de cada cliente para sus documentos, sus tareas y lo que usted le envía. ||| ग्राहक की अपनी जगह: उसके दस्तावेज़, उसके काम और जो आप उसे भेजते हैं। ||| 客户专属的空间，放着他们的文件、待办事项和您发给他们的内容。
+Agencies and firms with clients to look after. ||| Agencias y despachos con clientes a quienes atender. ||| ऐसी एजेंसियाँ और फ़र्म जिन्हें ग्राहकों की देखभाल करनी है। ||| 需要照顾客户的代理机构和事务所。
+Your to-do ||| Sus tareas ||| आपके काम ||| 您的待办事项
+Upload my ID ||| Subir mi identificación ||| मेरी पहचान अपलोड करें ||| 上传我的证件
+The client sees what is asked of them, nothing else. ||| El cliente ve lo que se le pide y nada más. ||| ग्राहक को वही दिखता है जो उससे माँगा गया है, और कुछ नहीं। ||| 客户只会看到需要他们做的事，别的都看不到。
+Upload your ID ||| Suba su identificación ||| अपनी पहचान अपलोड करें ||| 上传您的证件
+Sign the form ||| Firme el formulario ||| फ़ॉर्म पर हस्ताक्षर करें ||| 签署表格
+Book a time ||| Reserve una hora ||| समय तय करें ||| 预约时间
+Each step ticks itself off. ||| Cada paso se marca solo. ||| हर चरण अपने आप पूरा चिह्नित हो जाता है। ||| 每一步完成后会自动打勾。
+You see it finish, with nobody chasing. ||| Lo ve terminar sin que nadie tenga que insistir. ||| आप इसे पूरा होते देखते हैं, किसी को पीछे पड़े बिना। ||| 您看着它完成，无需任何人催促。
+Returns ||| Declaraciones ||| रिटर्न ||| 报税
+Work out a tax return, and see what changes if you do something different. ||| Calcule una declaración de impuestos y vea qué cambia si hace algo distinto. ||| कर रिटर्न तैयार करें, और देखें कि कुछ अलग करने पर क्या बदलता है। ||| 算出一份纳税申报，并看看换一种做法会有什么变化。
+Preparers and the people they prepare for. ||| Preparadores de impuestos y las personas para quienes preparan. ||| कर तैयार करने वाले और वे लोग जिनके लिए वे तैयार करते हैं। ||| 报税师以及他们服务的人。
+Your year ||| Su año ||| आपका साल ||| 您的这一年
+Add retirement saving ||| Añadir ahorro para la jubilación ||| सेवानिवृत्ति की बचत जोड़ें ||| 添加退休储蓄
+You enter your year once. ||| Usted introduce su año una sola vez. ||| आप अपना साल एक ही बार दर्ज करते हैं। ||| 您只需录入一次全年数据。
+Income ||| Ingresos ||| आमदनी ||| 收入
+Entered ||| Introducido ||| दर्ज ||| 已录入
+Spending ||| Gastos ||| खर्च ||| 支出
+Retirement saving ||| Ahorro para la jubilación ||| सेवानिवृत्ति की बचत ||| 退休储蓄
+Add ||| Añadir ||| जोड़ें ||| 添加
+Tax owed, each way ||| Impuesto a pagar, de cada manera ||| हर तरीके से देय कर ||| 每种方案应缴的税
+Keep this one ||| Quedarse con esta ||| इसे रखें ||| 选定这一种
+See the difference before you decide. ||| Vea la diferencia antes de decidir. ||| फ़ैसला करने से पहले अंतर देखें। ||| 决定之前先看看差别。
+Ready for your preparer ||| Listo para su preparador ||| आपके कर-तैयारकर्ता के लिए तैयार ||| 可交给您的报税师
+General information, not tax advice. ||| Información general, no asesoría fiscal. ||| सामान्य जानकारी, कर संबंधी सलाह नहीं। ||| 仅为一般信息，不构成税务建议。
+Figures checked ||| Cifras revisadas ||| आँकड़े जाँचे गए ||| 数字已核对
+Forms filled ||| Formularios rellenados ||| फ़ॉर्म भरे गए ||| 表格已填写
+A note on what changed ||| Una nota sobre lo que cambió ||| क्या बदला, इस पर एक टिप्पणी ||| 附一条变更说明
+People ||| Personas ||| लोग ||| 联系人
+Everyone you work with in one list, with what was said and what to do next. ||| Todas las personas con las que trabaja en una lista, con lo que se dijo y lo que sigue. ||| आप जिन सबके साथ काम करते हैं, एक सूची में, साथ में जो कहा गया और आगे क्या करना है। ||| 把所有往来对象放进一份名单，附上谈过的内容和下一步。
+Anyone who sells or looks after clients. ||| Cualquiera que vende o atiende a clientes. ||| कोई भी जो बेचता है या ग्राहकों की देखभाल करता है। ||| 任何销售或服务客户的人。
+Follow up Sam ||| Dar seguimiento a Sam ||| Sam से संपर्क करें ||| 跟进 Sam
+Who needs you today, at the top. ||| Quién le necesita hoy, arriba del todo. ||| आज किसे आपकी ज़रूरत है, सबसे ऊपर। ||| 今天谁需要您，就排在最前面。
+Follow up ||| Seguimiento ||| संपर्क करें ||| 跟进
+New ||| Nuevo ||| नया ||| 新
+Quote sent ||| Presupuesto enviado ||| कोटेशन भेजा गया ||| 报价已发送
+Call with Sam ||| Llamada con Sam ||| Sam के साथ कॉल ||| 与 Sam 通话
+Save the note ||| Guardar la nota ||| नोट सहेजें ||| 保存备注
+Notes stay with the person. ||| Las notas se quedan con la persona. ||| नोट उसी व्यक्ति के साथ रहते हैं। ||| 备注会跟着这个人走。
+Sam would like a quote by Friday. ||| Sam quiere un presupuesto para el viernes. ||| Sam को शुक्रवार तक कोटेशन चाहिए। ||| Sam 希望周五前拿到报价。
+Noted. I will send it Thursday. ||| Anotado. Se lo envío el jueves. ||| ठीक है। मैं गुरुवार को भेज दूँगा। ||| 好的，我周四发给您。
+Next steps ||| Próximos pasos ||| अगले कदम ||| 下一步
+Nothing is left to memory. ||| Nada se deja a la memoria. ||| कुछ भी याददाश्त के भरोसे नहीं छूटता। ||| 没有什么要靠记忆。
+Send the quote ||| Enviar el presupuesto ||| कोटेशन भेजें ||| 发送报价
+Call on Friday ||| Llamar el viernes ||| शुक्रवार को फ़ोन करें ||| 周五致电
+Reminder set ||| Recordatorio programado ||| अनुस्मारक तय ||| 已设提醒
+Billing ||| Facturación ||| बिलिंग ||| 开票
+Make an invoice, send it, and see who has paid and who has not. ||| Haga una factura, envíela y vea quién ha pagado y quién no. ||| इनवॉइस बनाएँ, भेजें, और देखें कि किसने भुगतान किया और किसने नहीं। ||| 开一张发票并发出，看看谁已付款、谁还没付。
+Small businesses and the people who keep their books. ||| Pequeños negocios y las personas que llevan su contabilidad. ||| छोटे व्यवसाय और उनके खाते सँभालने वाले लोग। ||| 小企业以及帮他们记账的人。
+Invoice for Sam ||| Factura para Sam ||| Sam के लिए इनवॉइस ||| 给 Sam 的发票
+Send the invoice ||| Enviar la factura ||| इनवॉइस भेजें ||| 发送发票
+Lines in, invoice out. ||| Se añaden las líneas y sale la factura. ||| लाइनें डालें, इनवॉइस तैयार। ||| 填入明细，发票即成。
+Setup ||| Configuración ||| सेटअप ||| 开通费
+Added ||| Añadido ||| जोड़ा गया ||| 已添加
+Monthly ||| Mensual ||| मासिक ||| 月费
+Total ||| Total ||| कुल ||| 合计
+Ready ||| Listo ||| तैयार ||| 就绪
+Mark as paid ||| Marcar como pagada ||| भुगतान हुआ चिह्नित करें ||| 标记为已付款
+The customer pays by the link. ||| El cliente paga con el enlace. ||| ग्राहक लिंक से भुगतान करता है। ||| 客户通过链接付款。
+This month ||| Este mes ||| इस महीने ||| 本月
+Who has paid, and who needs a nudge. ||| Quién ha pagado y a quién hay que recordárselo. ||| किसने भुगतान किया और किसे याद दिलाना है। ||| 谁已付款，谁需要提醒一下。
+Paid ||| Pagada ||| भुगतान हुआ ||| 已付款
+Overdue ||| Vencida ||| बकाया ||| 已逾期
+Calls ||| Llamadas ||| कॉल ||| 通话
+Record a call, get the words written down, and a short summary with what to do next. ||| Grabe una llamada, obtenga lo dicho por escrito y un resumen breve con lo que hay que hacer. ||| कॉल रिकॉर्ड करें, शब्द लिखित में पाएँ, और आगे क्या करना है इसका छोटा सारांश। ||| 录下一通电话，得到文字记录，以及一份附带下一步的简短摘要。
+Agents, advisers and anyone who takes calls. ||| Agentes, asesores y cualquiera que atienda llamadas. ||| एजेंट, सलाहकार और कोई भी जो कॉल लेता है। ||| 经纪人、顾问，以及任何接电话的人。
+Recording a call ||| Grabando una llamada ||| कॉल रिकॉर्ड हो रही है ||| 正在录音
+Stop recording ||| Detener la grabación ||| रिकॉर्डिंग रोकें ||| 停止录音
+Both sides are told apart. ||| Se distingue a cada interlocutor. ||| दोनों पक्षों की आवाज़ें अलग पहचानी जाती हैं। ||| 通话双方会被分开识别。
+Transcript ||| Transcripción ||| लिखित प्रतिलिपि ||| 文字记录
+Summarise ||| Resumir ||| सारांश बनाएँ ||| 生成摘要
+The words, written as they were said. ||| Las palabras, escritas tal como se dijeron. ||| शब्द, ठीक वैसे लिखे हुए जैसे बोले गए। ||| 原话，一字不差地写下。
+Hello, I would like to renew. ||| Hola, quisiera renovar. ||| नमस्ते, मैं नवीनीकरण कराना चाहता हूँ। ||| 您好，我想续约。
+Of course. Let me find your file. ||| Por supuesto. Busco su expediente. ||| ज़रूर। मैं आपकी फ़ाइल ढूँढता हूँ। ||| 好的，我来查一下您的档案。
+The summary lands on the person’s record. ||| El resumen queda en el expediente de la persona. ||| सारांश उस व्यक्ति के रिकॉर्ड में पहुँच जाता है। ||| 摘要会直接记到这个人的档案里。
+Send the renewal form ||| Enviar el formulario de renovación ||| नवीनीकरण का फ़ॉर्म भेजें ||| 发送续约表格
+Call back on Tuesday ||| Volver a llamar el martes ||| मंगलवार को दोबारा फ़ोन करें ||| 周二回电
+Add a note to the file ||| Añadir una nota al expediente ||| फ़ाइल में एक नोट जोड़ें ||| 在档案中添加备注
+Talks ||| Charlas ||| वार्ताएँ ||| 讲座
+Run a live or recorded talk, get people to turn up, and see who stayed. ||| Ofrezca una charla en vivo o grabada, consiga que la gente asista y vea quién se quedó. ||| सीधा या रिकॉर्ड किया हुआ कार्यक्रम चलाएँ, लोगों को आने के लिए प्रेरित करें, और देखें कि कौन रुका। ||| 举办直播或录播讲座，让人们真的来参加，并看看谁坚持到了最后。
+Anyone who teaches, sells or explains by talking. ||| Cualquiera que enseña, vende o explica hablando. ||| कोई भी जो बोलकर सिखाता, बेचता या समझाता है। ||| 任何靠讲话来教学、销售或讲解的人。
+Join the talk ||| Unirse a la charla ||| कार्यक्रम से जुड़ें ||| 加入讲座
+Register ||| Inscribirse ||| पंजीकरण करें ||| 报名
+One page, two questions. ||| Una página, dos preguntas. ||| एक पृष्ठ, दो सवाल। ||| 一个页面，两个问题。
+Name ||| Nombre ||| नाम ||| 姓名
+Email ||| Correo electrónico ||| ईमेल ||| 邮箱
+You are in ||| Ya está inscrito ||| आप जुड़ गए ||| 您已报名
+Reminders get people to turn up. ||| Los recordatorios hacen que la gente asista. ||| अनुस्मारकों से लोग आते हैं। ||| 提醒能让人们真的出席。
+Registered ||| Inscrito ||| पंजीकृत ||| 已报名
+Reminder on the way ||| Recordatorio en camino ||| अनुस्मारक आ रहा है ||| 提醒即将发出
+Link ready ||| Enlace listo ||| लिंक तैयार ||| 链接已就绪
+Who stayed ||| Quién se quedó ||| कौन रुका ||| 谁留到了最后
+Not who registered: who stayed, minute by minute. ||| No quién se inscribió, sino quién se quedó, minuto a minuto. ||| कौन पंजीकृत हुआ यह नहीं: कौन रुका, मिनट-दर-मिनट। ||| 不是谁报了名，而是谁留了下来，精确到每一分钟。
+Surveys ||| Encuestas ||| सर्वेक्षण ||| 问卷
+Build a form or a survey, share a link, and read the answers in a table. ||| Cree un formulario o una encuesta, comparta un enlace y lea las respuestas en una tabla. ||| फ़ॉर्म या सर्वेक्षण बनाएँ, लिंक साझा करें, और जवाब तालिका में पढ़ें। ||| 制作表单或问卷，分享链接，并在表格里查看回答。
+Any business that asks its customers something. ||| Cualquier negocio que pregunta algo a sus clientes. ||| कोई भी व्यवसाय जो अपने ग्राहकों से कुछ पूछता है। ||| 任何会向客户提问的企业。
+New survey ||| Encuesta nueva ||| नया सर्वेक्षण ||| 新问卷
+Share the link ||| Compartir el enlace ||| लिंक साझा करें ||| 分享链接
+Nine kinds of question. ||| Nueve tipos de pregunta. ||| नौ तरह के सवाल। ||| 九种题型。
+Question ||| Pregunta ||| सवाल ||| 问题
+How did we do? ||| ¿Qué tal lo hicimos? ||| हमारा काम कैसा रहा? ||| 我们做得怎么样？
+Answer ||| Respuesta ||| जवाब ||| 回答
+1 to 5 stars ||| De 1 a 5 estrellas ||| 1 से 5 सितारे ||| 1 到 5 星
+Answers so far ||| Respuestas hasta ahora ||| अब तक के जवाब ||| 目前的回答
+Open the table ||| Abrir la tabla ||| तालिका खोलें ||| 打开表格
+They arrive as people answer. ||| Llegan a medida que la gente responde. ||| लोगों के जवाब देते ही वे आ जाते हैं। ||| 人们一回答，结果就同步到达。
+Answers ready ||| Respuestas listas ||| जवाब तैयार ||| 回答已就绪
+Answers belong to you alone. ||| Las respuestas son solo suyas. ||| जवाब सिर्फ़ आपके हैं। ||| 回答只属于您自己。
+Read in a table ||| Leídas en una tabla ||| तालिका में पढ़े गए ||| 在表格中查看
+Saved as a file ||| Guardadas como archivo ||| फ़ाइल के रूप में सहेजे गए ||| 已存为文件
+Points sent to those who earned them ||| Puntos enviados a quienes los ganaron ||| अंक उन्हें भेजे गए जिन्होंने कमाए ||| 积分已发给应得者
+Points ||| Puntos ||| अंक ||| 积分
+Customers earn points for answering and coming back, and spend them on something real. ||| Los clientes ganan puntos por responder y volver, y los gastan en algo real. ||| ग्राहक जवाब देने और वापस आने पर अंक कमाते हैं, और उन्हें किसी असली चीज़ पर खर्च करते हैं। ||| 客户因回答问题、再次光临而获得积分，并把积分换成实实在在的东西。
+Businesses that want customers to keep coming back. ||| Negocios que quieren que sus clientes sigan volviendo. ||| ऐसे व्यवसाय जो चाहते हैं कि ग्राहक बार-बार आते रहें। ||| 希望客户不断回头的企业。
+Your points ||| Sus puntos ||| आपके अंक ||| 您的积分
+Spend my points ||| Gastar mis puntos ||| मेरे अंक खर्च करें ||| 使用我的积分
+Each thing they do earns points. ||| Cada cosa que hacen suma puntos. ||| वे जो भी करते हैं, उससे अंक मिलते हैं। ||| 他们做的每件事都能赚积分。
+Answered a survey ||| Respondió una encuesta ||| सर्वेक्षण का जवाब दिया ||| 回答了问卷
+Earned ||| Ganado ||| कमाया ||| 已获得
+Left a review ||| Dejó una reseña ||| समीक्षा लिखी ||| 留下了评价
+Came back ||| Volvió ||| वापस आया ||| 再次光临
+Choose a reward ||| Elija una recompensa ||| कोई इनाम चुनें ||| 选择奖励
+Choose the consultation ||| Elegir la consulta ||| परामर्श चुनें ||| 选择咨询
+Spent on a reward you set. ||| Se gastan en una recompensa que usted define. ||| आपके तय किए इनाम पर खर्च होते हैं। ||| 用来兑换您设定的奖励。
+A free consultation ||| Una consulta gratuita ||| एक मुफ़्त परामर्श ||| 一次免费咨询
+Choose ||| Elegir ||| चुनें ||| 选择
+A gift card ||| Una tarjeta de regalo ||| एक गिफ़्ट कार्ड ||| 一张礼品卡
+A credit ||| Un crédito ||| एक क्रेडिट ||| 一笔抵扣额
+Reward on its way ||| Recompensa en camino ||| इनाम रास्ते में है ||| 奖励正在发放
+Each business pays for its own rewards. ||| Cada negocio paga sus propias recompensas. ||| हर व्यवसाय अपने इनाम का खर्च खुद उठाता है। ||| 每家企业各自承担自己的奖励。
+Points spent ||| Puntos gastados ||| अंक खर्च हुए ||| 积分已使用
+Consultation booked ||| Consulta reservada ||| परामर्श तय हो गया ||| 咨询已预约
+Thank you sent ||| Agradecimiento enviado ||| धन्यवाद भेजा गया ||| 感谢信已发送
+Coaching ||| Entrenamiento ||| कोचिंग ||| 辅导
+Practise what to say when a client pushes back, and get answers you can use. ||| Practique qué decir cuando un cliente se resiste y obtenga respuestas que pueda usar. ||| अभ्यास करें कि जब ग्राहक आपत्ति करे तो क्या कहना है, और ऐसे जवाब पाएँ जो काम आएँ। ||| 练习客户提出异议时该怎么说，并得到可以直接用的回答。
+Anyone learning to sell, and the people who teach them. ||| Cualquiera que aprende a vender y quienes les enseñan. ||| बेचना सीखने वाले और उन्हें सिखाने वाले। ||| 学习销售的人，以及教他们的人。
+A client says ||| Un cliente dice ||| एक ग्राहक कहता है ||| 客户说
+Get answers ||| Obtener respuestas ||| जवाब पाएँ ||| 获取回答
+Describe the objection. ||| Describa la objeción. ||| आपत्ति बताएँ। ||| 描述这条异议。
+It costs too much. ||| Cuesta demasiado. ||| यह बहुत महँगा है। ||| 太贵了。
+Three ways to answer ||| Tres maneras de responder ||| जवाब देने के तीन तरीके ||| 三种回答方式
+Practise one ||| Practicar una ||| एक का अभ्यास करें ||| 练习其中一种
+Each answer says why it works. ||| Cada respuesta explica por qué funciona. ||| हर जवाब बताता है कि वह क्यों कारगर है। ||| 每种回答都会说明它为什么有效。
+Ask what they compared it to ||| Preguntar con qué lo compararon ||| पूछें कि उन्होंने इसकी तुलना किससे की ||| 问他们拿什么做了比较
+Try ||| Probar ||| आज़माएँ ||| 试试
+Show what they would lose ||| Mostrar lo que perderían ||| दिखाएँ कि उन्हें क्या खोना पड़ेगा ||| 说明他们会错过什么
+Offer a smaller start ||| Ofrecer un comienzo más pequeño ||| छोटी शुरुआत का प्रस्ताव रखें ||| 提出从小规模开始
+Your practice ||| Su práctica ||| आपका अभ्यास ||| 您的练习
+Practice is scored, and it shows. ||| La práctica se puntúa y se nota. ||| अभ्यास पर अंक मिलते हैं, और सुधार दिखता है। ||| 练习会打分，进步看得见。
+What if ||| ¿Y si...? ||| अगर ऐसा हो तो ||| 假如
+Lay out a person’s numbers and see what changes if they choose differently. ||| Presente las cifras de una persona y vea qué cambia si elige otra opción. ||| किसी व्यक्ति के आँकड़े सामने रखें और देखें कि अलग चुनने पर क्या बदलता है। ||| 摆出一个人的各项数字，看看选择不同会有什么变化。
+Advisers, preparers and anyone planning ahead. ||| Asesores, preparadores y cualquiera que planifique con antelación. ||| सलाहकार, कर-तैयारकर्ता और आगे की योजना बनाने वाला कोई भी। ||| 顾问、报税师，以及任何做长远规划的人。
+Tax and cost, today ||| Impuestos y costo, hoy ||| कर और लागत, आज ||| 税费与成本，现状
+What if they save more? ||| ¿Y si ahorran más? ||| अगर वे ज़्यादा बचत करें तो? ||| 如果他们多存一些呢？
+The starting picture. ||| El punto de partida. ||| शुरुआती तस्वीर। ||| 起点的情况。
+Tax and cost, with a change ||| Impuestos y costo, con un cambio ||| कर और लागत, एक बदलाव के साथ ||| 税费与成本，做出调整后
+Compare them ||| Compararlos ||| दोनों की तुलना करें ||| 对比两者
+Change one lever, see the rest move. ||| Cambie un factor y vea moverse el resto. ||| एक चीज़ बदलें और देखें कि बाकी कैसे बदलती हैं। ||| 调整一个因素，看其余的一起变化。
+The better choice ||| La mejor opción ||| बेहतर विकल्प ||| 更好的选择
+The comparison says which keeps the most. ||| La comparación indica cuál deja más. ||| तुलना बताती है कि किसमें सबसे ज़्यादा बचता है। ||| 对比会告诉您哪种留下的最多。
+Today ||| Hoy ||| आज ||| 今天
+Keep ||| Mantener ||| जारी रखें ||| 保持不变
+Save more ||| Ahorrar más ||| ज़्यादा बचत करें ||| 多存一些
+Best ||| La mejor ||| सबसे अच्छा ||| 最佳
+Wait a year ||| Esperar un año ||| एक साल रुकें ||| 等一年
+Compare ||| Comparar ||| तुलना करें ||| 对比
+Collections ||| Cobranza ||| वसूली ||| 催收
+Look after overdue accounts within the rules, with plain notices and a plan people can follow. ||| Atienda las cuentas vencidas dentro de las normas, con avisos claros y un plan que la gente pueda seguir. ||| नियमों के भीतर बकाया खातों की देखभाल करें, सरल सूचनाओं और ऐसी योजना के साथ जिसे लोग निभा सकें। ||| 在规则范围内处理逾期账户，用通俗的通知和人们能够遵守的还款计划。
+Collection agencies and the businesses they work for. ||| Agencias de cobranza y los negocios para los que trabajan. ||| वसूली एजेंसियाँ और वे व्यवसाय जिनके लिए वे काम करती हैं। ||| 催收机构以及它们服务的企业。
+Accounts ||| Cuentas ||| खाते ||| 账户
+Send a plain notice ||| Enviar un aviso claro ||| सरल सूचना भेजें ||| 发送通俗通知
+The rules are checked before anything goes. ||| Las normas se verifican antes de enviar nada. ||| कुछ भी जाने से पहले नियम जाँचे जाते हैं। ||| 发出之前会先核对规则。
+Account 1042 ||| Cuenta 1042 ||| खाता 1042 ||| 账户 1042
+Account 1043 ||| Cuenta 1043 ||| खाता 1043 ||| 账户 1043
+Plan agreed ||| Plan acordado ||| योजना पर सहमति ||| 已约定还款计划
+Account 1044 ||| Cuenta 1044 ||| खाता 1044 ||| 账户 1044
+Disputed ||| En disputa ||| विवादित ||| 有争议
+Notice ||| Aviso ||| सूचना ||| 通知
+Approve ||| Aprobar ||| मंज़ूर करें ||| 批准
+Plain words, and the required line is kept. ||| Palabras sencillas, y se mantiene la frase obligatoria. ||| सरल शब्द, और ज़रूरी पंक्ति बनी रहती है। ||| 用词通俗，并保留法定必需的那句话。
+This is an attempt to collect a debt. You can dispute it. ||| Este es un intento de cobrar una deuda. Usted puede disputarla. ||| यह एक कर्ज़ वसूलने का प्रयास है। आप इस पर आपत्ति कर सकते हैं। ||| 这是一次债务催收。您可以对此提出异议。
+Rules checked ||| Normas verificadas ||| नियम जाँचे गए ||| 规则已核对
+What the software can stop, it stops. ||| Lo que el software puede impedir, lo impide. ||| जो सॉफ़्टवेयर रोक सकता है, वह रोकता है। ||| 软件能拦住的，它都会拦住。
+Contact hours kept ||| Horarios de contacto respetados ||| संपर्क के घंटों का पालन हुआ ||| 遵守联系时段
+Stop request respected ||| Solicitud de no contacto respetada ||| रोकने के अनुरोध का सम्मान हुआ ||| 已遵从停止联系的请求
+Notice in plain words ||| Aviso en palabras sencillas ||| सूचना सरल शब्दों में ||| 通知用语通俗
