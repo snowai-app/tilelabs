@@ -36,6 +36,14 @@ export function initPage(): () => void {
   }
   on(pauseBtn, 'click', () => setMotion(!motionOn));
 
+  /* ---------- the logo goes back to the top and leaves the plain site address in the bar (no #top) ---------- */
+  const brand = document.querySelector<HTMLAnchorElement>('a.brand');
+  if (brand) on(brand, 'click', (e: MouseEvent) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: reduce.matches ? 'auto' : 'smooth' });
+    try { history.replaceState(null, '', location.pathname + location.search); } catch { /* the address stays as it is */ }
+  });
+
   /* ---------- things arrive as they are scrolled to ---------- */
   const reveals = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'));
   reveals.forEach((el, i) => el.style.setProperty('--d', `${(i % 4) * 0.09}s`));
