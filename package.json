@@ -1,0 +1,31 @@
+{
+  "name": "tilelabs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tile Labs: a software studio. Products, white label and custom software. tilelabs.si.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test \"lib/*.test.mts\""
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource-variable/hanken-grotesk": "^5.3.0",
+    "@fontsource/dm-mono": "^5.3.0",
+    "next": "^16.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^7.0.2"
+  }
+}
