@@ -1,4 +1,5 @@
 import type { Lang } from './legal-words.ts';
+import { CAPS, type Caps } from './caps-words.ts';
 
 /** The front page's words in four languages (operator, 26 October 2026, T-3821). English governs; Spanish, Hindi and Chinese were written by Claude and no native speaker has read them. A correction is one line here, or in lib/product-words.src.txt for the products' drawn screens.
     The products' own names (Today, Engage, Sign…), the invented people and brands in examples, and the company's name are never translated. */
@@ -14,11 +15,13 @@ export type Site = {
   products: { label: string; h: string; p: string; visit: string; sr: string[] };
   promises: { label: string; h: string; cards: { h: string; p: string }[]; upd: string };
   talk: { label: string; h: string; lead: string; legend: string; kinds: [string, string, string]; nameL: string; emailL: string; aboutL: string; send: string; needEmail: string; ok: string };
+  caps: Caps;
   demo: { close: string; suits: string; talkAbout: string; prev: string; next: string; example: string; videoAria: string; step: string; pause: string; play: string; signHere: string; paid: string; seeDemo: string; wish: string };
 };
 
 export const SITE: Record<Lang, Site> = {
   en: {
+    caps: CAPS.en,
     meta: { title: 'Tile Labs: software, cut to fit', description: 'Tile Labs makes software products, white-label versions that wear your brand, and custom software built to your specification.' },
     navAria: 'Sections',
     theme: { label: 'Light or dark', light: 'Switch to light', dark: 'Switch to dark' },
@@ -51,6 +54,7 @@ export const SITE: Record<Lang, Site> = {
     demo: { close: 'Close the demo', suits: 'Suits:', talkAbout: 'Talk to us about it', prev: '← Previous product', next: 'Next product →', example: 'A drawn example with invented names, not the real product.', videoAria: '{n} demo video, 15 seconds, no sound', step: 'Step {n}', pause: 'Pause', play: 'Play', signHere: 'Sign here', paid: 'PAID', seeDemo: '{n}, {tag}. See a demo.', wish: 'I would like to see {n}.' },
   },
   es: {
+    caps: CAPS.es,
     meta: { title: 'Tile Labs: software a su medida', description: 'Tile Labs crea productos de software, versiones de marca blanca que llevan su marca y software a medida según sus especificaciones.' },
     navAria: 'Secciones',
     theme: { label: 'Claro u oscuro', light: 'Cambiar a claro', dark: 'Cambiar a oscuro' },
@@ -83,6 +87,7 @@ export const SITE: Record<Lang, Site> = {
     demo: { close: 'Cerrar la demostración', suits: 'Ideal para:', talkAbout: 'Hable con nosotros sobre esto', prev: '← Producto anterior', next: 'Producto siguiente →', example: 'Un ejemplo dibujado con nombres inventados, no el producto real.', videoAria: 'Vídeo de demostración de {n}, 15 segundos, sin sonido', step: 'Paso {n}', pause: 'Pausar', play: 'Reanudar', signHere: 'Firme aquí', paid: 'PAGADA', seeDemo: '{n}, {tag}. Ver una demostración.', wish: 'Me gustaría ver {n}.' },
   },
   hi: {
+    caps: CAPS.hi,
     meta: { title: 'Tile Labs: आपके नाप का सॉफ़्टवेयर', description: 'Tile Labs सॉफ़्टवेयर उत्पाद बनाती है, व्हाइट-लेबल संस्करण जो आपका ब्रांड पहनते हैं, और आपकी विशिष्टताओं के अनुसार कस्टम सॉफ़्टवेयर।' },
     navAria: 'अनुभाग',
     theme: { label: 'हल्का या गहरा', light: 'हल्के रंग पर जाएँ', dark: 'गहरे रंग पर जाएँ' },
@@ -115,6 +120,7 @@ export const SITE: Record<Lang, Site> = {
     demo: { close: 'डेमो बंद करें', suits: 'किसके लिए:', talkAbout: 'इसके बारे में हमसे बात करें', prev: '← पिछला उत्पाद', next: 'अगला उत्पाद →', example: 'काल्पनिक नामों वाला एक बनाया हुआ उदाहरण, असली उत्पाद नहीं।', videoAria: '{n} का डेमो वीडियो, 15 सेकंड, बिना आवाज़', step: 'चरण {n}', pause: 'रोकें', play: 'चलाएँ', signHere: 'यहाँ हस्ताक्षर करें', paid: 'भुगतान हुआ', seeDemo: '{n}, {tag}। डेमो देखें।', wish: 'मैं {n} देखना चाहता हूँ।' },
   },
   zh: {
+    caps: CAPS.zh,
     meta: { title: 'Tile Labs：量身定制的软件', description: 'Tile Labs 制作软件产品、贴上您品牌的白标版本，以及按您的要求定制的软件。' },
     navAria: '栏目',
     theme: { label: '浅色或深色', light: '切换到浅色', dark: '切换到深色' },

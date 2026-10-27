@@ -1,4 +1,5 @@
 import Behaviour from './Behaviour';
+import Capabilities from './Capabilities';
 import DemoDialog from './DemoDialog';
 import Footer from './Footer';
 import Header from './Header';
@@ -18,6 +19,7 @@ export default function Home({ lang }: { lang: Lang }) {
       <main id="top">
         <Hero lang={lang} />
         <What lang={lang} />
+        <Capabilities lang={lang} />
         <How lang={lang} />
         <Products lang={lang} />
         <Promises lang={lang} />
