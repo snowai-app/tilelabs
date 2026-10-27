@@ -396,6 +396,15 @@ dialog.cookies .btn { margin-top: 18px; }
 .lsw-c { font-size: 12px; font-weight: 600; letter-spacing: .02em; color: var(--ink-3); }
 .lsw-f { flex: none; border-radius: 2px; }
 footer .lsw { margin-left: 6px; }
+/* Phones and tablets: the footer's lines sit close together, nothing more than needed (T-3841) */
+@media (max-width: 980px) {
+  footer .wrap { gap: 6px 16px; min-height: 0; }
+  footer .links { gap: 6px 14px; }
+  footer .brand { font-size: 17px; gap: 8px; }
+  footer .brand .mark { width: 22px; height: 22px; gap: 2px; }
+  footer .lsw { margin-left: 0; }
+}
+@media (max-width: 560px) { footer .legal, footer a, footer .hipaa { font-size: 13px; } footer .cookie { font-size: 13px; padding: 4px 12px; } }
 .top .thm, .top .lsw-t, .top .pause, footer .lsw-t, footer .cookie { background: var(--chrome-btn); border-color: var(--chrome-btn-line); color: var(--chrome-ink); } /* the bar's buttons, as Engage's (T-3828) */
 footer a, footer .legal, footer .hipaa, footer .cookie { color: var(--chrome-ink); }
 @media (max-width: 560px) { .top .hdr-r { margin-left: auto; } }
@@ -578,6 +587,7 @@ footer a, footer .legal, footer .hipaa, footer .cookie { color: var(--chrome-ink
 [dir="rtl"] nav, [dir="rtl"] footer .links, [dir="rtl"] .wl .addr, [dir="rtl"] .win .dots, [dir="rtl"] .bub.me { margin-left: 0; margin-right: auto; }
 [dir="rtl"] .win .bar span { margin-left: 0; margin-right: 8px; }
 [dir="rtl"] footer .lsw { margin-left: 0; margin-right: 6px; }
+@media (max-width: 980px) { [dir="rtl"] footer .lsw { margin-right: 0; } }
 [dir="rtl"] .lsw-list { right: auto; left: 0; }
 [dir="rtl"] .demo .x { right: auto; left: 14px; }
 [dir="rtl"] .stagebox .pause { right: auto; left: 12px; }
