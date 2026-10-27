@@ -6,9 +6,9 @@ import { COMPANY } from './company.ts';
 export const LANGS = ['en', 'es', 'hi', 'zh', 'ja', 'ko', 'pt'] as const;
 export type Lang = (typeof LANGS)[number];
 export const isLang = (s: string): s is Lang => (LANGS as readonly string[]).includes(s);
-/** The switch's labels: the family's EN | ES | HI, and the language's own name for Chinese. */
-export const SHORT: Record<Lang, string> = { en: 'EN', es: 'ES', hi: 'HI', zh: '中文', ja: '日本語', ko: '한국어', pt: 'PT' };
-export const NAME: Record<Lang, string> = { en: 'English', es: 'Español', hi: 'हिन्दी', zh: '中文', ja: '日本語', ko: '한국어', pt: 'Português' };
+/** The menu's two columns (operator, 27 October 2026, T-3831: "when you write HI, I don't know; if I see Hindi, I'll know"). NAME, on the left, is in letters the reader can recognise: the language's own name when that is in Latin letters, else its English name. SHORT, on the right and on the bar's button, is the language in its own script, or its code when the name is already Latin. */
+export const SHORT: Record<Lang, string> = { en: 'EN', es: 'ES', hi: 'हिन्दी', zh: '中文', ja: '日本語', ko: '한국어', pt: 'PT' };
+export const NAME: Record<Lang, string> = { en: 'English', es: 'Español', hi: 'Hindi', zh: 'Chinese', ja: 'Japanese', ko: 'Korean', pt: 'Português' };
 export const OTHER = ['es', 'hi', 'zh', 'ja', 'ko', 'pt'] as const;
 /** The html lang and hreflang code of a language (Chinese is Simplified). */
 export const htmlLang = (l: Lang) => (l === 'zh' ? 'zh-Hans' : l);
