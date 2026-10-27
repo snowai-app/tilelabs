@@ -2,7 +2,7 @@
 
 import { useEffect, useId, useRef, useState } from 'react';
 import Flag from './Flag';
-import { FRAME, LANGS, NAME, SHORT, pathFor, type Doc, type Lang } from '@/lib/legal-words';
+import { FRAME, LANGS, NAME, SHORT, htmlLang, pathFor, type Doc, type Lang } from '@/lib/legal-words';
 
 /** The language menu (operator, 26 October 2026, T-3821), built as the family's bar builds it: a globe, the language's code and a chevron; the list shows each language's flag, its own name and its code.
     Each choice is a link to the same page in that language, so no cookie is needed and a link can be shared in a language. */
@@ -43,7 +43,7 @@ export default function LangMenu({ lang, doc, up = false }: { lang: Lang; doc: D
         <ul id={`${id}-list`} ref={list} className="lsw-list" data-up={up ? '' : undefined} aria-label={f.switchLabel} onKeyDown={move}>
           {LANGS.map((l) => (
             <li key={l}>
-              <a className="lsw-o" href={pathFor(l, doc)} lang={l === 'zh' ? 'zh-Hans' : l} hrefLang={l === 'zh' ? 'zh-Hans' : l} aria-current={l === lang ? 'true' : undefined} onClick={() => setOpen(false)}>
+              <a className="lsw-o" href={pathFor(l, doc)} lang={htmlLang(l)} hrefLang={htmlLang(l)} aria-current={l === lang ? 'true' : undefined} onClick={() => setOpen(false)}>
                 <Flag code={l} id={id.replace(/:/g, '')} />
                 <span className="lsw-n">{NAME[l]}</span>
                 <span className="lsw-c">{SHORT[l]}</span>

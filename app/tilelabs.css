@@ -7,6 +7,7 @@
   --font-display: "Bricolage Grotesque Variable", "Hanken Grotesk Variable", system-ui, sans-serif;
   --font-body: "Hanken Grotesk Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --chrome: #f3f3f3; --chrome-line: #bdbdc4; --chrome-ink: #19192b; --chrome-btn: #ffffff; --chrome-btn-line: #cfcfdf; /* Engage's top bar and foot (T-3828) */
   --radius: 14px; --max: 1180px;
 }
 @media (prefers-color-scheme: dark) {
@@ -14,12 +15,14 @@
     --bg: #15121f; --surface: #1f1b2e; --ink: #f0ecfa; --ink-2: #c9c3dc; --ink-3: #978fb0; --line: #302b45;
     --tile: #2a2540; --tile-2: #332d4d; --accent: #a88bff; --accent-ink: #15121f; --accent-soft: #2a2347;
     --g1: #4c74f0; --g2: #2bb8b0; --g3: #f5c04d; --g4: #f0708a; color-scheme: dark;
+    --chrome: #1b1828; --chrome-line: #3d3755; --chrome-ink: #f0ecfa; --chrome-btn: #262238; --chrome-btn-line: #4a4463;
   }
 }
 :root[data-theme="dark"] {
   --bg: #15121f; --surface: #1f1b2e; --ink: #f0ecfa; --ink-2: #c9c3dc; --ink-3: #978fb0; --line: #302b45;
   --tile: #2a2540; --tile-2: #332d4d; --accent: #a88bff; --accent-ink: #15121f; --accent-soft: #2a2347;
   --g1: #4c74f0; --g2: #2bb8b0; --g3: #f5c04d; --g4: #f0708a; color-scheme: dark;
+  --chrome: #1b1828; --chrome-line: #3d3755; --chrome-ink: #f0ecfa; --chrome-btn: #262238; --chrome-btn-line: #4a4463;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -32,8 +35,8 @@ p { margin: 0; }
 .mono { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
 
 /* ---------- header ---------- */
-.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
-body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--chrome); color: var(--chrome-ink); border-bottom: 1px solid var(--chrome-line); } /* Engage's top bar colours (T-3828) */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--chrome); }
 .top .wrap { display: flex; align-items: center; gap: 20px; padding-block: 12px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--font-display); font-weight: 800; font-size: 21px; letter-spacing: -0.02em; }
 .mark { width: 30px; height: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 3px; }
@@ -313,7 +316,7 @@ input.t:focus, textarea:focus { border-color: var(--accent); }
 .note { font-size: 14px; color: var(--ink-2); min-height: 1.4em; }
 .note.ok { color: var(--g2); font-weight: 600; }
 
-footer { border-top: 1px solid var(--line); padding-block: 28px calc(28px + env(safe-area-inset-bottom, 0px)); }
+footer { background: var(--chrome); color: var(--chrome-ink); border-top: 1px solid var(--chrome-line); padding-block: 28px calc(28px + env(safe-area-inset-bottom, 0px)); } /* Engage's foot colours (T-3828) */
 footer .wrap { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; }
 footer .links { margin-left: auto; display: flex; flex-wrap: wrap; gap: 14px 18px; }
 footer a { color: var(--ink-2); font-size: 14px; }
@@ -392,8 +395,14 @@ dialog.cookies .btn { margin-top: 18px; }
 .lsw-c { font-size: 12px; font-weight: 600; letter-spacing: .02em; color: var(--ink-3); }
 .lsw-f { flex: none; border-radius: 2px; }
 footer .lsw { margin-left: 6px; }
+.top .thm, .top .lsw-t, .top .pause, footer .lsw-t, footer .cookie { background: var(--chrome-btn); border-color: var(--chrome-btn-line); color: var(--chrome-ink); } /* the bar's buttons, as Engage's (T-3828) */
+footer a, footer .legal, footer .hipaa, footer .cookie { color: var(--chrome-ink); }
 @media (max-width: 560px) { .top .hdr-r { margin-left: auto; } }
-/* Devanagari and Chinese fall back to the device's own faces: this site loads no outside fonts. */
+/* Devanagari, Chinese, Japanese and Korean fall back to the device's own faces: this site loads no outside fonts. */
+[lang="ja"], [lang="ko"] { --font-display: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; --font-body: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+[lang="ja"] h1, [lang="ja"] h2, [lang="ja"] h3, [lang="ko"] h1, [lang="ko"] h2, [lang="ko"] h3 { line-height: 1.22; letter-spacing: 0; }
+[lang="ja"] .mono, [lang="ko"] .mono { letter-spacing: 0.02em; text-transform: none; }
+[lang="ja"] .hero h1, [lang="ko"] .hero h1 { font-size: clamp(38px, 6.4vw, 80px); }
 [lang="hi"], [lang="zh-Hans"] { --font-display: system-ui, -apple-system, "Segoe UI", "Noto Sans Devanagari", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; --font-body: system-ui, -apple-system, "Segoe UI", "Noto Sans Devanagari", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; }
 [lang="hi"] h1, [lang="hi"] h2, [lang="hi"] h3, [lang="zh-Hans"] h1, [lang="zh-Hans"] h2, [lang="zh-Hans"] h3 { line-height: 1.22; letter-spacing: 0; }
 [lang="hi"] .mono, [lang="zh-Hans"] .mono { letter-spacing: 0.02em; text-transform: none; }
