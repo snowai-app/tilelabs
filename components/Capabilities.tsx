@@ -64,6 +64,7 @@ export default function Capabilities({ lang }: { lang: Lang }) {
   }, [v, aPath, aRun, anim, n]);
   const edge = 100 / n / 2;
   const pos = edge + aStep * (100 - 2 * edge) / (n - 1);
+  const side = lang === 'ar' ? 'right' : 'left'; // Arabic reads right to left, so the line starts on the right (T-3832)
 
   /* ---- B: the wheel ---- */
   const [bi, setBi] = useState(0);
@@ -133,8 +134,8 @@ export default function Capabilities({ lang }: { lang: Lang }) {
             <div {...r(0.1, 'cap-a-line')}>
               <div className="cap-a-track" style={{ gridTemplateColumns: `repeat(${n}, minmax(0, 1fr))` }}>
                 <div className="cap-a-rail" style={{ left: `${edge}%`, right: `${edge}%` }}><i style={{ width: `${aStep / (n - 1) * 100}%` }} /></div>
-                <div className="cap-a-dot" style={{ left: `${pos}%` }} />
-                <div className="cap-a-item" style={{ left: `${pos}%` }} aria-live="polite">{path.items[aStep]}</div>
+                <div className="cap-a-dot" style={{ [side]: `${pos}%` }} />
+                <div className="cap-a-item" style={{ [side]: `${pos}%` }} aria-live="polite">{path.items[aStep]}</div>
                 {path.steps.map(([k, label], i) => (
                   <div key={i} className={'cap-a-st' + (k === 'yours' ? ' yours' : '') + (i <= aStep ? ' on' : '')}>
                     <div className="k">{ICON[stepIcon(k, label)]}</div>

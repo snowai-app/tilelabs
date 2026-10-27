@@ -1,6 +1,6 @@
 import type { Lang } from './legal-words.ts';
 import { CAPS, type Caps } from './caps-words.ts';
-import { SITE_JA, SITE_KO, SITE_PT } from './site-words-more.ts';
+import { SITE_AR, SITE_JA, SITE_KO, SITE_PT } from './site-words-more.ts';
 
 /** The front page's words in seven languages (operator, 26 October 2026, T-3821; Japanese, Korean and Portuguese in lib/site-words-more.ts, 27 October 2026, T-3829). English governs; every other language was written by Claude and no native speaker has read them. A correction is one line here, or in lib/product-words.src.txt for the products' drawn screens.
     The products' own names (Today, Engage, Sign…), the invented people and brands in examples, and the company's name are never translated. */
@@ -156,4 +156,5 @@ export const SITE: Record<Lang, Site> = {
   ja: SITE_JA,
   ko: SITE_KO,
   pt: SITE_PT,
+  ar: SITE_AR,
 };

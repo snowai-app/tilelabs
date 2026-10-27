@@ -1,15 +1,17 @@
 import { COMPANY } from './company.ts';
 
-/** The company's privacy policy and terms in seven languages (operator, 26 October 2026, T-3820; Japanese, Korean and Portuguese added 27 October 2026, T-3829). English governs; the others are translated to the best of our ability, written by Claude and not yet read by a native speaker. A correction is one line here.
+/** The company's privacy policy and terms in seven languages (operator, 26 October 2026, T-3820; Japanese, Korean and Portuguese added 27 October 2026, T-3829; Arabic, T-3832). English governs; the others are translated to the best of our ability, written by Claude and not yet read by a native speaker. A correction is one line here.
     A paragraph may hold {legal} {trading} {place} {uen} {line} (filled from lib/company.ts and the language's own words) and the link slots {mail} {privacy} {snowPrivacy} {snowTerms}, which the page draws as links. */
 
-export const LANGS = ['en', 'es', 'hi', 'zh', 'ja', 'ko', 'pt'] as const;
+export const LANGS = ['en', 'es', 'hi', 'zh', 'ja', 'ko', 'pt', 'ar'] as const;
 export type Lang = (typeof LANGS)[number];
 export const isLang = (s: string): s is Lang => (LANGS as readonly string[]).includes(s);
 /** The menu's two columns (operator, 27 October 2026, T-3831: "when you write HI, I don't know; if I see Hindi, I'll know"). NAME, on the left, is in letters the reader can recognise: the language's own name when that is in Latin letters, else its English name. SHORT, on the right and on the bar's button, is the language in its own script, or its code when the name is already Latin. */
-export const SHORT: Record<Lang, string> = { en: 'EN', es: 'ES', hi: 'हिन्दी', zh: '中文', ja: '日本語', ko: '한국어', pt: 'PT' };
-export const NAME: Record<Lang, string> = { en: 'English', es: 'Español', hi: 'Hindi', zh: 'Chinese', ja: 'Japanese', ko: 'Korean', pt: 'Português' };
-export const OTHER = ['es', 'hi', 'zh', 'ja', 'ko', 'pt'] as const;
+export const SHORT: Record<Lang, string> = { en: 'EN', es: 'ES', hi: 'हिन्दी', zh: '中文', ja: '日本語', ko: '한국어', pt: 'PT', ar: 'العربية' };
+export const NAME: Record<Lang, string> = { en: 'English', es: 'Español', hi: 'Hindi', zh: 'Chinese', ja: 'Japanese', ko: 'Korean', pt: 'Português', ar: 'Arabic' };
+export const OTHER = ['es', 'hi', 'zh', 'ja', 'ko', 'pt', 'ar'] as const;
+/** Arabic reads right to left (T-3832). */
+export const dirOf = (l: Lang) => (l === 'ar' ? 'rtl' : 'ltr');
 /** The html lang and hreflang code of a language (Chinese is Simplified). */
 export const htmlLang = (l: Lang) => (l === 'zh' ? 'zh-Hans' : l);
 
@@ -98,6 +100,16 @@ export const FRAME: Record<Lang, Frame> = {
     privacyLink: 'Privacidade', termsLink: 'Termos', hipaa: 'Em conformidade com a HIPAA', cookies: 'Opções de cookies',
     cookiesBody: 'Esta página não define cookies e não tem análises, então não há nada a escolher. Se isso mudar, a escolha estará aqui primeiro.', close: 'Fechar',
   },
+  ar: {
+    htmlLang: 'ar',
+    privacyTitle: 'سياسة الخصوصية', termsTitle: 'الشروط',
+    privacyDesc: `كيف تتعامل ${L} مع المعلومات الشخصية بصفتها شركة.`, termsDesc: `شروط هذا الموقع، من ${L}.`,
+    updated: '26 أكتوبر 2026', last: 'آخر تحديث: {date}.', draft: 'مسودة: لم يراجعها محامٍ بعد.', back: 'العودة إلى Tile Labs', homeAria: 'Tile Labs، الصفحة الرئيسية',
+    companyNo: 'رقم الشركة (UEN)', place: 'سنغافورة', line: `${L}، وتعمل باسم ${T}`,
+    switchLabel: 'اللغة', note: 'تُرجم هذا بأفضل ما نستطيع. النسخة الإنجليزية هي المعتمدة، وليس لهذه الترجمة أثر قانوني.',
+    privacyLink: 'الخصوصية', termsLink: 'الشروط', hipaa: 'متوافق مع HIPAA', cookies: 'خيارات ملفات تعريف الارتباط',
+    cookiesBody: 'لا تضع هذه الصفحة أي ملفات تعريف ارتباط ولا تحتوي على أدوات تحليل، لذا لا يوجد ما تختاره. إن تغيّر ذلك، فسيظهر الخيار هنا أولًا.', close: 'إغلاق',
+  },
 };
 
 export const PRIVACY: Record<Lang, Block[]> = {
@@ -171,6 +183,16 @@ export const PRIVACY: Record<Lang, Block[]> = {
     { h: 'Suas escolhas', p: 'Você pode nos perguntar o que guardamos sobre você, pedir para corrigir ou para excluir. Escreva para {mail}.' },
     { h: 'Alterações', p: 'Se esta política mudar, a data no topo muda com ela.' },
   ],
+  ar: [
+    { p: '{legal}، التي تعمل باسم {trading}، شركة برمجيات في {place}. توضح هذه الصفحة ما نفعله بالمعلومات الشخصية بصفتنا شركة: عندما تزور هذا الموقع، وعندما تراسلنا، وعندما نبني برمجيات لعميل أو نشغّلها له.' },
+    { h: 'من نحن', p: '{line} (رقم الشركة {uen}، {place}). نصنع منتجات برمجية، ونسخًا بعلامة بيضاء تحمل علامة العميل التجارية، وبرمجيات مخصصة تُبنى وفق مواصفات العميل.' },
+    { h: 'هذا الموقع', p: 'لا يضع هذا الموقع ملفات تعريف ارتباط، ولا يحتوي على أدوات تحليل، ولا يحمّل نصوصًا برمجية أو خطوطًا من الخارج. لا يجمع عنك شيئًا. النموذج في قسم «تحدّث إلينا» يفتح تطبيق البريد لديك بما كتبته، ولا يُرسل شيء من الصفحة نفسها.' },
+    { h: 'إذا راسلتنا', p: 'عندما ترسل إلينا بريدًا إلكترونيًا نتلقى عنوان بريدك وما كتبته. نستخدمهما للرد عليك، ونحتفظ بالمحادثة طالما احتجنا إليها لذلك. عنواننا هو {mail}.' },
+    { h: 'منتجاتنا', p: 'المنتجات التي نبيعها باسم Snow AI تملكها {legal} وتشغّلها. ما تجمعه تلك التطبيقات، ولماذا، موجود في سياسة الخصوصية الخاصة بها على {snowPrivacy}. والمنتج الذي يُباع باسم آخر له إشعاره الخاص.' },
+    { h: 'البرمجيات التي نبنيها للعملاء', p: 'يقرر العميل ما يحتفظ به تطبيقه ولماذا. نتعامل مع تلك المعلومات فقط لبناء البرمجيات وتشغيلها للعميل، بموجب اتفاقنا معه. وإشعار الخصوصية الذي يقرؤه مستخدمو العميل هو إشعار العميل. إن كنت تستخدم تطبيق عميل ولديك سؤال عن معلوماتك، فاسأل العميل أولًا، وإن راسلتنا فسننقل سؤالك إليه.' },
+    { h: 'خياراتك', p: 'يمكنك أن تسألنا عمّا نحتفظ به عنك، أو أن تطلب تصحيحه أو حذفه. راسلنا على {mail}.' },
+    { h: 'التغييرات', p: 'إذا تغيرت هذه السياسة، يتغير التاريخ في أعلاها معها.' },
+  ],
 };
 
 export const TERMS: Record<Lang, Block[]> = {
@@ -229,6 +251,14 @@ export const TERMS: Record<Lang, Block[]> = {
     { h: 'Trabalho para clientes', p: 'Versões white label e software personalizado são feitos sob um contrato escrito para cada cliente. Esse contrato, e não esta página, define o que entregamos, quem é o dono e quanto custa.' },
     { h: 'Uso do site', p: 'Por favor, não faça mau uso do site nem tente quebrá-lo ou sobrecarregá-lo. O texto, os desenhos e o código da página são nossos, salvo indicação em contrário.' },
     { h: 'Contato', p: 'Dúvidas sobre estes termos: {mail}. Nossa política de privacidade está em {privacy}.' },
+  ],
+  ar: [
+    { p: 'تشمل هذه الشروط هذا الموقع، tilelabs.si. وهو مملوك لـ {line} (رقم الشركة {uen}، {place}). استخدام الموقع يعني الموافقة عليها.' },
+    { h: 'هذا الموقع', p: 'يخبرك الموقع بما نصنعه وكيف تتواصل معنا. إنه معلومات، وليس عرضًا، ويُقدَّم كما هو. الأمثلة فيه مرسومة بأسماء مختلَقة وهي أمثلة فقط.' },
+    { h: 'منتجاتنا', p: 'لكل منتج شروطه الخاصة التي تسري عند استخدامه. شروط عائلة تطبيقات Snow AI موجودة على {snowTerms}.' },
+    { h: 'العمل للعملاء', p: 'تُصنع النسخ ذات العلامة البيضاء والبرمجيات المخصصة بموجب اتفاق مكتوب لكل عميل. ذلك الاتفاق، لا هذه الصفحة، هو ما يحدد ما نسلّمه ومن يملكه وكم يكلّف.' },
+    { h: 'استخدام الموقع', p: 'يُرجى عدم إساءة استخدام الموقع أو محاولة تعطيله أو إثقاله. نصوص الصفحة ورسومها وشيفرتها ملك لنا ما لم يُذكر خلاف ذلك.' },
+    { h: 'التواصل', p: 'للأسئلة عن هذه الشروط: {mail}. سياسة الخصوصية لدينا على {privacy}.' },
   ],
 };
 

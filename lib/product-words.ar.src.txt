@@ -1,0 +1,257 @@
+For shops ||| للمتاجر
+A short list each morning for a shop: what to mark down, what to reorder, and who has stopped coming. ||| قائمة قصيرة كل صباح للمتجر: ما الذي يُخفَّض سعره، وما الذي يُعاد طلبه، ومن توقف عن المجيء.
+Grocery stores, pizza shops, any shop with stock that goes off. ||| محلات البقالة ومحلات البيتزا وأي متجر لديه بضاعة تفسد.
+Stock this morning ||| المخزون هذا الصباح
+Mark down the milk ||| خفّض سعر الحليب
+The day’s list, worked out from what is on the shelf. ||| قائمة اليوم، مبنية على ما هو على الرف.
+Whole milk ||| حليب كامل الدسم
+Expires soon ||| ينتهي قريبًا
+Sourdough ||| خبز العجين المخمّر
+Fine ||| جيد
+Bananas ||| موز
+Reorder ||| إعادة الطلب
+Approve the reorder ||| وافق على إعادة الطلب
+Each suggestion says why it is there, and waits for your yes. ||| كل اقتراح يذكر سبب وجوده، وينتظر موافقتك.
+Marked down ||| خُفّض سعره
+Done for today ||| انتهى عمل اليوم
+Nothing changes at the till, or goes out, without your yes. ||| لا شيء يتغير عند الصندوق أو يخرج دون موافقتك.
+Milk marked down ||| خُفّض سعر الحليب
+Reorder drafted ||| مسودة إعادة الطلب جاهزة
+A special ready to approve ||| عرض خاص جاهز للموافقة
+Marketing ||| التسويق
+Messages to the right customers at the right time, written once and personal to each. ||| رسائل إلى العملاء المناسبين في الوقت المناسب، تُكتب مرة واحدة وتصل شخصية لكل واحد.
+Any business that talks to its customers. ||| أي نشاط تجاري يتواصل مع عملائه.
+New message ||| رسالة جديدة
+Preview it ||| معاينة
+Pick a group, say it once. ||| اختر مجموعة، وقلها مرة واحدة.
+To ||| إلى
+Regulars ||| العملاء الدائمون
+Say ||| النص
+Thank you for coming back, {first name}. ||| شكرًا لعودتك يا {first name}.
+What Sam sees ||| ما يراه Sam
+Approve and send ||| وافق وأرسل
+Every message is made personal, and you approve it first. ||| كل رسالة تصبح شخصية، وأنت توافق عليها أولًا.
+Thank you for coming back, Sam. ||| شكرًا لعودتك يا Sam.
+Here is a little something for you. ||| إليك هدية صغيرة.
+Replies this week ||| الردود هذا الأسبوع
+You see who answered, and what worked. ||| ترى من ردّ، وما الذي نجح.
+Signatures ||| التوقيعات
+Send a document to be signed by someone outside your account, and keep what was said. ||| أرسل مستندًا ليوقّعه شخص من خارج حسابك، واحتفظ بما قيل.
+Agencies, firms and anyone who needs a signature. ||| الوكالات والشركات وكل من يحتاج إلى توقيع.
+Service agreement ||| اتفاقية خدمة
+Sign here ||| وقّع هنا
+The signer opens a link. No account needed. ||| يفتح الموقّع رابطًا. لا حاجة إلى حساب.
+Send it back ||| أعده
+Draw it, type it or upload it. ||| ارسمه أو اكتبه أو ارفعه.
+Signed and filed ||| موقّع ومحفوظ
+Who saw what, and when, is kept. ||| يُحفظ من رأى ماذا ومتى.
+Signed by Sam ||| وقّعه Sam
+Copy kept with the record ||| نسخة محفوظة مع السجل
+Sent back to you ||| أُعيد إليك
+Files ||| الملفات
+One place for every document, filed in the right folder, with every version kept. ||| مكان واحد لكل مستند، محفوظ في المجلد الصحيح، مع الاحتفاظ بكل نسخة.
+Anyone who loses time looking for a file. ||| كل من يضيّع الوقت في البحث عن ملف.
+Folders ||| المجلدات
+Drop in a file ||| أفلت ملفًا هنا
+Every document has a folder. ||| لكل مستند مجلد.
+Contracts ||| العقود
+Open ||| فتح
+Forms ||| النماذج
+Receipts ||| الإيصالات
+Share it ||| شاركه
+It reads the file and files it where it belongs. ||| يقرأ الملف ويحفظه في مكانه الصحيح.
+Lease.pdf ||| Lease.pdf
+Filed in Contracts ||| حُفظ في العقود
+Shared by link ||| مُشارك برابط
+Every opening is logged. ||| كل فتح يُسجَّل.
+Link made ||| أُنشئ الرابط
+Ends on Friday ||| ينتهي يوم الجمعة
+Opened once ||| فُتح مرة واحدة
+For clients ||| للعملاء
+A client’s own place for their documents, their to-dos and what you send them. ||| مكان خاص بالعميل لمستنداته ومهامه وما ترسله إليه.
+Agencies and firms with clients to look after. ||| الوكالات والشركات التي لديها عملاء ترعاهم.
+Your to-do ||| مهامك
+Upload my ID ||| ارفع هويتي
+The client sees what is asked of them, nothing else. ||| يرى العميل ما يُطلب منه فقط، لا شيء غير ذلك.
+Upload your ID ||| ارفع هويتك
+Sign the form ||| وقّع النموذج
+Book a time ||| احجز موعدًا
+Each step ticks itself off. ||| كل خطوة تُعلَّم بنفسها.
+You see it finish, with nobody chasing. ||| تراها تكتمل، دون أن يلاحق أحد أحدًا.
+Returns ||| الإقرارات
+Work out a tax return, and see what changes if you do something different. ||| احسب الإقرار الضريبي، وانظر ما الذي يتغير إن فعلت شيئًا مختلفًا.
+Preparers and the people they prepare for. ||| معدّو الإقرارات والأشخاص الذين يعدّونها لهم.
+Your year ||| سنتك
+Add retirement saving ||| أضف ادخار التقاعد
+You enter your year once. ||| تُدخل سنتك مرة واحدة.
+Income ||| الدخل
+Entered ||| مُدخل
+Spending ||| الإنفاق
+Retirement saving ||| ادخار التقاعد
+Add ||| أضف
+Tax owed, each way ||| الضريبة المستحقة في كل حالة
+Keep this one ||| احتفظ بهذا
+See the difference before you decide. ||| انظر الفرق قبل أن تقرر.
+Ready for your preparer ||| جاهز لمعدّ الإقرار
+General information, not tax advice. ||| معلومات عامة، وليست مشورة ضريبية.
+Figures checked ||| الأرقام مُراجعة
+Forms filled ||| النماذج مُعبأة
+A note on what changed ||| ملاحظة بما تغيّر
+People ||| الأشخاص
+Everyone you work with in one list, with what was said and what to do next. ||| كل من تعمل معهم في قائمة واحدة، مع ما قيل وما يجب فعله بعد ذلك.
+Anyone who sells or looks after clients. ||| كل من يبيع أو يرعى العملاء.
+Follow up Sam ||| تابع مع Sam
+Who needs you today, at the top. ||| من يحتاجك اليوم، في الأعلى.
+Follow up ||| متابعة
+New ||| جديد
+Quote sent ||| أُرسل عرض السعر
+Call with Sam ||| مكالمة مع Sam
+Save the note ||| احفظ الملاحظة
+Notes stay with the person. ||| تبقى الملاحظات مع الشخص.
+Sam would like a quote by Friday. ||| يريد Sam عرض سعر قبل الجمعة.
+Noted. I will send it Thursday. ||| تم. سأرسله يوم الخميس.
+Next steps ||| الخطوات التالية
+Nothing is left to memory. ||| لا شيء متروك للذاكرة.
+Send the quote ||| أرسل عرض السعر
+Call on Friday ||| اتصل يوم الجمعة
+Reminder set ||| ضُبط التذكير
+Billing ||| الفوترة
+Make an invoice, send it, and see who has paid and who has not. ||| أنشئ فاتورة وأرسلها، وانظر من دفع ومن لم يدفع.
+Small businesses and the people who keep their books. ||| الأعمال الصغيرة ومن يمسك دفاترها.
+Invoice for Sam ||| فاتورة لـ Sam
+Send the invoice ||| أرسل الفاتورة
+Lines in, invoice out. ||| البنود تدخل، والفاتورة تخرج.
+Setup ||| الإعداد
+Added ||| أُضيف
+Monthly ||| شهري
+Total ||| الإجمالي
+Ready ||| جاهز
+Mark as paid ||| علّمها مدفوعة
+The customer pays by the link. ||| يدفع العميل عبر الرابط.
+This month ||| هذا الشهر
+Who has paid, and who needs a nudge. ||| من دفع، ومن يحتاج إلى تذكير.
+Paid ||| مدفوعة
+Overdue ||| متأخرة
+Calls ||| المكالمات
+Record a call, get the words written down, and a short summary with what to do next. ||| سجّل مكالمة، واحصل على كلماتها مكتوبة، وملخص قصير بما يجب فعله بعد ذلك.
+Agents, advisers and anyone who takes calls. ||| الوكلاء والمستشارون وكل من يتلقى المكالمات.
+Recording a call ||| جارٍ تسجيل مكالمة
+Stop recording ||| أوقف التسجيل
+Both sides are told apart. ||| يُميَّز الطرفان.
+Transcript ||| النص المكتوب
+Summarise ||| لخّص
+The words, written as they were said. ||| الكلمات، مكتوبة كما قيلت.
+Hello, I would like to renew. ||| مرحبًا، أود التجديد.
+Of course. Let me find your file. ||| بالطبع. دعني أجد ملفك.
+The summary lands on the person’s record. ||| يصل الملخص إلى سجل الشخص.
+Send the renewal form ||| أرسل نموذج التجديد
+Call back on Tuesday ||| عاود الاتصال يوم الثلاثاء
+Add a note to the file ||| أضف ملاحظة إلى الملف
+Talks ||| المحاضرات
+Run a live or recorded talk, get people to turn up, and see who stayed. ||| قدّم محاضرة مباشرة أو مسجلة، واجعل الناس يحضرون، وانظر من بقي.
+Anyone who teaches, sells or explains by talking. ||| كل من يعلّم أو يبيع أو يشرح بالكلام.
+Join the talk ||| انضم إلى المحاضرة
+Register ||| سجّل
+One page, two questions. ||| صفحة واحدة، سؤالان.
+Name ||| الاسم
+Email ||| البريد الإلكتروني
+You are in ||| أنت مسجّل
+Reminders get people to turn up. ||| التذكيرات تجعل الناس يحضرون.
+Registered ||| مسجّل
+Reminder on the way ||| التذكير في الطريق
+Link ready ||| الرابط جاهز
+Who stayed ||| من بقي
+Not who registered: who stayed, minute by minute. ||| ليس من سجّل، بل من بقي، دقيقة بدقيقة.
+Surveys ||| الاستبيانات
+Build a form or a survey, share a link, and read the answers in a table. ||| أنشئ نموذجًا أو استبيانًا، وشارك رابطًا، واقرأ الإجابات في جدول.
+Any business that asks its customers something. ||| أي نشاط تجاري يسأل عملاءه شيئًا.
+New survey ||| استبيان جديد
+Share the link ||| شارك الرابط
+Nine kinds of question. ||| تسعة أنواع من الأسئلة.
+Question ||| السؤال
+How did we do? ||| كيف كان أداؤنا؟
+Answer ||| الإجابة
+1 to 5 stars ||| من 1 إلى 5 نجوم
+Answers so far ||| الإجابات حتى الآن
+Open the table ||| افتح الجدول
+They arrive as people answer. ||| تصل كلما أجاب الناس.
+Answers ready ||| الإجابات جاهزة
+Answers belong to you alone. ||| الإجابات ملك لك وحدك.
+Read in a table ||| تُقرأ في جدول
+Saved as a file ||| محفوظة كملف
+Points sent to those who earned them ||| أُرسلت النقاط لمن كسبها
+Points ||| النقاط
+Customers earn points for answering and coming back, and spend them on something real. ||| يكسب العملاء نقاطًا مقابل الإجابة والعودة، وينفقونها على شيء حقيقي.
+Businesses that want customers to keep coming back. ||| الأعمال التي تريد أن يعود عملاؤها باستمرار.
+Your points ||| نقاطك
+Spend my points ||| أنفق نقاطي
+Each thing they do earns points. ||| كل ما يفعلونه يكسبهم نقاطًا.
+Answered a survey ||| أجاب عن استبيان
+Earned ||| كسب
+Left a review ||| ترك تقييمًا
+Came back ||| عاد مجددًا
+Choose a reward ||| اختر مكافأة
+Choose the consultation ||| اختر الاستشارة
+Spent on a reward you set. ||| تُنفق على مكافأة تحددها أنت.
+A free consultation ||| استشارة مجانية
+Choose ||| اختر
+A gift card ||| بطاقة هدية
+A credit ||| رصيد
+Reward on its way ||| المكافأة في الطريق
+Each business pays for its own rewards. ||| كل نشاط تجاري يدفع مكافآته بنفسه.
+Points spent ||| أُنفقت النقاط
+Consultation booked ||| حُجزت الاستشارة
+Thank you sent ||| أُرسل الشكر
+Coaching ||| التدريب
+Practise what to say when a client pushes back, and get answers you can use. ||| تدرّب على ما تقوله حين يعترض العميل، واحصل على إجابات يمكنك استخدامها.
+Anyone learning to sell, and the people who teach them. ||| كل من يتعلم البيع، ومن يعلّمونه.
+A client says ||| يقول العميل
+Get answers ||| احصل على إجابات
+Describe the objection. ||| صِف الاعتراض.
+It costs too much. ||| إنه مكلف جدًا.
+Three ways to answer ||| ثلاث طرق للرد
+Practise one ||| تدرّب على واحدة
+Each answer says why it works. ||| كل إجابة تذكر لماذا تنجح.
+Ask what they compared it to ||| اسأل بماذا قارنه
+Try ||| جرّب
+Show what they would lose ||| بيّن ما سيخسرونه
+Offer a smaller start ||| اعرض بداية أصغر
+Your practice ||| تدريبك
+Practice is scored, and it shows. ||| التدريب يُقيَّم، ويظهر أثره.
+What if ||| ماذا لو
+Lay out a person’s numbers and see what changes if they choose differently. ||| اعرض أرقام شخص وانظر ما الذي يتغير لو اختار بشكل مختلف.
+Advisers, preparers and anyone planning ahead. ||| المستشارون ومعدّو الإقرارات وكل من يخطط للمستقبل.
+Tax and cost, today ||| الضريبة والتكلفة اليوم
+What if they save more? ||| ماذا لو ادّخروا أكثر؟
+The starting picture. ||| الصورة الأولى.
+Tax and cost, with a change ||| الضريبة والتكلفة مع تغيير
+Compare them ||| قارن بينهما
+Change one lever, see the rest move. ||| غيّر عاملًا واحدًا، وانظر البقية تتحرك.
+The better choice ||| الخيار الأفضل
+The comparison says which keeps the most. ||| المقارنة تبيّن أيهما يُبقي أكثر.
+Today ||| اليوم
+Keep ||| إبقاء
+Save more ||| ادخار أكثر
+Best ||| الأفضل
+Wait a year ||| انتظار سنة
+Compare ||| قارن
+Collections ||| التحصيل
+Look after overdue accounts within the rules, with plain notices and a plan people can follow. ||| تابع الحسابات المتأخرة ضمن القواعد، بإشعارات واضحة وخطة يستطيع الناس اتباعها.
+Collection agencies and the businesses they work for. ||| وكالات التحصيل والأعمال التي تعمل لصالحها.
+Accounts ||| الحسابات
+Send a plain notice ||| أرسل إشعارًا واضحًا
+The rules are checked before anything goes. ||| تُراجع القواعد قبل أن يخرج أي شيء.
+Account 1042 ||| الحساب 1042
+Account 1043 ||| الحساب 1043
+Plan agreed ||| اتُّفق على خطة
+Account 1044 ||| الحساب 1044
+Disputed ||| متنازع عليه
+Notice ||| إشعار
+Approve ||| وافق
+Plain words, and the required line is kept. ||| كلمات واضحة، مع الإبقاء على السطر المطلوب.
+This is an attempt to collect a debt. You can dispute it. ||| هذه محاولة لتحصيل دين. يمكنك الاعتراض عليه.
+Rules checked ||| القواعد مُراجعة
+What the software can stop, it stops. ||| ما يستطيع البرنامج منعه، يمنعه.
+Contact hours kept ||| أوقات التواصل محترمة
+Stop request respected ||| طلب التوقف محترم
+Notice in plain words ||| إشعار بكلمات واضحة
