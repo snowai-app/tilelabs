@@ -1,7 +1,7 @@
 import type { Lang } from '@/lib/legal-words';
 
 /** Small drawn flags for the language menu, so they look the same on every device (a flag emoji is only two letters on Windows).
-    A language is not a country: English is the Union Jack, Spanish the plain red and yellow bands, Hindi India's flag, Chinese the red field with the yellow star; Japanese the red disc, Korean the red and blue taegeuk on white, Portuguese the green and red fields (T-3829). Drawn as the family's menu draws them (snowai family/flags.tsx). */
+    A language is not a country: English is the Union Jack, Spanish the plain red and yellow bands, Hindi India's flag, Chinese the red field with the yellow star; Japanese the red disc, Korean the red and blue taegeuk on white, Portuguese the green and red fields (T-3829); Arabic the green field of the Arab League with a white ring, since no one country speaks for it (T-3832). Drawn as the family's menu draws them (snowai family/flags.tsx). */
 export default function Flag({ code, id }: { code: Lang; id: string }) {
   const clip = `flag-${id}-${code}`;
   return (
@@ -39,6 +39,11 @@ export default function Flag({ code, id }: { code: Lang; id: string }) {
           <circle cx="12" cy="8" r="4.2" fill="#CD2E3A" />
           <path d="M8.4 9.5a3.6 3.6 0 0 0 7.2-1.5 1.8 1.8 0 0 1-3.6 0 1.8 1.8 0 0 0-3.6 1.5z" fill="#0047A0" />
           <path d="M3.2 3.2l2.4 1.6M3.2 12.8l2.4-1.6M18.4 4.8l2.4-1.6M18.4 11.2l2.4 1.6" stroke="#000" strokeWidth="1.1" />
+        </>)}
+        {code === 'ar' && (<>
+          <rect width="24" height="16" fill="#007A3D" />
+          <circle cx="12" cy="8" r="4.2" fill="none" stroke="#fff" strokeWidth="1.3" />
+          <path d="M9 11.6h6" stroke="#fff" strokeWidth="1" />
         </>)}
         {code === 'pt' && (<>
           <rect width="24" height="16" fill="#DA291C" />

@@ -3,7 +3,7 @@ import type { Frame, Product, Row } from './products.ts';
 import type { Lang } from './legal-words.ts';
 
 /** The products' drawn screens in a language. English is the key into PRODUCT_WORDS; a phrase it does not hold stays English (the test fails first), and the invented people, addresses and the products' own names are never in it. */
-const COL: Record<Exclude<Lang, 'en'>, number> = { es: 0, hi: 1, zh: 2, ja: 3, ko: 4, pt: 5 };
+const COL: Record<Exclude<Lang, 'en'>, number> = { es: 0, hi: 1, zh: 2, ja: 3, ko: 4, pt: 5, ar: 6 };
 
 export function tr(lang: Lang, s: string): string {
   if (lang === 'en' || !s) return s;

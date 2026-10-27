@@ -105,3 +105,38 @@ export const SITE_PT: Site = {
   talk: { label: 'Fale conosco', h: 'Conte o que você precisa.', lead: 'Um produto para começar, a sua marca em um dos nossos, ou algo feito para você. Diga qual, e algumas palavras sobre o seu negócio.', legend: 'O que você procura?', kinds: ['Um produto', 'White label', 'Software personalizado'], nameL: 'Seu nome', emailL: 'E-mail de trabalho', aboutL: 'Sobre o seu negócio', send: 'Enviar para a Tile Labs', needEmail: 'Informe um e-mail de trabalho para podermos responder.', ok: 'O seu aplicativo de e-mail deve abrir com a mensagem pronta. Nada é enviado até você enviar por lá.' },
   demo: { close: 'Fechar a demonstração', suits: 'Indicado para:', talkAbout: 'Fale conosco sobre isto', prev: '← Produto anterior', next: 'Próximo produto →', example: 'Um exemplo desenhado com nomes inventados, não o produto real.', videoAria: 'Vídeo de demonstração de {n}, 15 segundos, sem som', step: 'Etapa {n}', pause: 'Pausar', play: 'Reproduzir', signHere: 'Assine aqui', paid: 'PAGO', seeDemo: '{n}, {tag}. Ver uma demonstração.', wish: 'Gostaria de ver {n}.' },
 };
+
+/** Arabic (operator, 27 October 2026, T-3832). Read right to left: the page sets dir="rtl". Written by Claude; no native speaker has read it. English governs. */
+export const SITE_AR: Site = {
+  caps: CAPS.ar,
+  meta: { title: 'Tile Labs: برمجيات على المقاس', description: 'تصنع Tile Labs منتجات برمجية، ونسخًا بعلامة بيضاء تحمل علامتك التجارية، وبرمجيات مخصصة تُبنى وفق مواصفاتك.' },
+  navAria: 'الأقسام',
+  theme: { label: 'فاتح أو داكن', light: 'التبديل إلى الفاتح', dark: 'التبديل إلى الداكن' },
+  nav: ['ما نقوم به', 'كيف نعمل', 'المنتجات', 'تحدّث إلينا'],
+  hero: { eyebrow: 'استوديو برمجيات', h1a: 'برمجيات،', h1b: 'على المقاس.', lede: 'تصنع Tile Labs منتجات برمجية، ونسخًا بعلامة بيضاء تحمل علامتك التجارية، وبرمجيات مخصصة تُبنى وفق مواصفاتك.', portfolio: 'أعمالنا', talk: 'تحدّث إلينا', stageTag: 'اضغط على مربع لترى ما يفعله', pause: 'إيقاف مؤقت', play: 'تشغيل', pauseAria: 'أوقف الحركة', playAria: 'شغّل الحركة' },
+  what: {
+    label: 'ما نقوم به', h: 'ثلاث طرق للحصول على البرمجيات التي تحتاجها.', intro: 'ابدأ بشيء نشغّله بالفعل، أو ضع اسمك عليه، أو اطلب منا أن نبني بالضبط ما يحتاجه عملك.',
+    cards: [
+      { h: 'منتجات تبدأ بها اليوم', p: 'تطبيقات جاهزة لإدارة متجر، والوصول إلى العملاء، وتوقيع المستندات، وتقديم الضرائب وغير ذلك. سجّل الدخول مرة واحدة واستخدمها معًا.' },
+      { h: 'علامة بيضاء، باسمك', p: 'خذ منتجًا نشغّله بالفعل وضع عليه اسمك وألوانك وعنوانك وأسعارك. عملاؤك لا يرون اسمنا أبدًا.' },
+      { h: 'مبنية وفق مواصفاتك', p: 'تحتاج شيئًا لا نبيعه؟ أخبرنا كيف يعمل فريقك، ونبني البرمجيات حول ذلك، انطلاقًا مما ينجح بالفعل.' },
+    ],
+    goals: ['اطلب الآن', 'احجز حصة', 'اعرض خطتي'], brandsAria: 'علامات تجارية للمثال',
+    spec: ['موافقة قبل إرسال أي شيء', 'الإنجليزية والإسبانية والهندية', 'تسجيل دخول خاص بك', 'تقارير في صفحة واحدة'],
+  },
+  how: { label: 'كيف نعمل', h: 'من محادثة إلى برمجيات يستخدمها الناس.', steps: [
+    ['نستمع', 'نبدأ بالطريقة التي تعمل بها اليوم: النماذج، وجداول البيانات، والخطوات التي لم يكتبها أحد.'],
+    ['نشكّل', 'تحصل على نسخة يمكنك النقر عليها، بكلماتك وأرقامك، قبل أن يُبنى أي شيء.'],
+    ['نبني', 'نبني على خطوات تستطيع رؤيتها، ونعرض عليك كل خطوة حين تعمل.'],
+    ['نطلق ونحسّن', 'تنطلق برمجياتك وتواصل التحسن، دون مشروع جديد مع كل تحديث.'],
+  ] },
+  products: { label: 'منتجاتنا', h: 'لكل منتج اسمه الخاص.', p: 'لكل منتج عنوانه الخاص، وتسجيل دخول واحد يعمل في جميعها. هذه الصفحة هي الشركة، والمنتجات هي حيث تذهب لاستخدامها.', visit: 'زر المنتجات', sr: ['Today، للمتاجر', 'Engage، التسويق', 'Sign، التوقيعات', 'Documents', 'Portal، للعملاء', 'Tax', 'CRM', 'Invoice', 'Voice، المكالمات', 'Webinar', 'Campaigns', 'Rewards'] },
+  promises: { label: 'في كل منتج', h: 'ما تحصل عليه أيًّا كان اختيارك.', upd: 'محدّث', cards: [
+    { h: 'خاص افتراضيًا', p: 'تبقى البيانات الصحية والهويات وأرقام الحسابات المصرفية مختومة، وكل مرة يفتح فيها أحد شيئًا منها تُسجَّل.' },
+    { h: 'بلغتك', p: 'الإنجليزية والإسبانية والهندية اليوم، وتُضاف لغات أخرى إلى كل المنتجات دفعة واحدة.' },
+    { h: 'تسجيل دخول واحد', p: 'سجّل الدخول مرة واحدة وتنقّل بين المنتجات دون تسجيل الدخول مجددًا.' },
+    { h: 'محدّث دائمًا', p: 'تصلك التحسينات فور جاهزيتها، دون أي شيء لتثبيته.' },
+  ] },
+  talk: { label: 'تحدّث إلينا', h: 'أخبرنا بما تحتاجه.', lead: 'منتج تبدأ به، أو علامتك التجارية على أحد منتجاتنا، أو شيء يُبنى لك. قل أيها، وبضع كلمات عن عملك.', legend: 'عمّ تبحث؟', kinds: ['منتج', 'علامة بيضاء', 'برمجيات مخصصة'], nameL: 'اسمك', emailL: 'بريد العمل', aboutL: 'عن عملك', send: 'أرسل إلى Tile Labs', needEmail: 'أضف بريد عمل حتى نتمكن من الرد.', ok: 'يُفترض أن يفتح تطبيق البريد لديك ورسالتك جاهزة. لا يُرسل شيء حتى ترسله من هناك.' },
+  demo: { close: 'أغلق العرض', suits: 'يناسب:', talkAbout: 'تحدّث إلينا عنه', prev: '→ المنتج السابق', next: 'المنتج التالي ←', example: 'مثال مرسوم بأسماء مختلَقة، وليس المنتج الحقيقي.', videoAria: 'فيديو عرض {n}، 15 ثانية، بلا صوت', step: 'الخطوة {n}', pause: 'إيقاف مؤقت', play: 'تشغيل', signHere: 'وقّع هنا', paid: 'مدفوع', seeDemo: '{n}، {tag}. شاهد عرضًا.', wish: 'أودّ أن أرى {n}.' },
+};
