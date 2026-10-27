@@ -317,8 +317,8 @@ input.t:focus, textarea:focus { border-color: var(--accent); }
 .note { font-size: 14px; color: var(--ink-2); min-height: 1.4em; }
 .note.ok { color: var(--g2); font-weight: 600; }
 
-footer { background: var(--chrome); color: var(--chrome-ink); border-top: 1px solid var(--chrome-line); padding-block: 14px calc(14px + env(safe-area-inset-bottom, 0px)); } /* Engage's foot colours (T-3828); lower (T-3841) */
-footer .wrap { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; }
+footer { background: var(--chrome); color: var(--chrome-ink); border-top: 1px solid var(--chrome-line); padding-block: 12px calc(12px + env(safe-area-inset-bottom, 0px)); } /* the same height as the top bar (T-3841) */
+footer .wrap { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; min-height: 39px; } /* the top bar's inner height, so both bars are 64px (T-3841) */
 footer .links { margin-left: auto; display: flex; flex-wrap: wrap; gap: 14px 18px; }
 footer a { color: var(--ink-2); font-size: 14px; }
 .legal { font-size: 14px; color: var(--ink-2); }
