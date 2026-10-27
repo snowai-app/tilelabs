@@ -1,13 +1,14 @@
 /* Concept: a glazed-tile wall. The page is grout and tile; glaze colours (cobalt, teal, kiln yellow, rose) are the only saturated things.
    Type: Bricolage Grotesque for display, Hanken Grotesk for reading, DM Mono for small labels. */
 :root {
-  --bg: #f4f4f9; --surface: #ffffff; --ink: #19192b; --ink-2: #4b4b66; --ink-3: #7d7d96; --line: #e4e4ee;
+  --bg: #fafafc; --surface: #ffffff; --ink: #19192b; --ink-2: #4b4b66; --ink-3: #7d7d96; --line: #e4e4ee;
   --tile: #e8e6f3; --tile-2: #dedbee; --accent: #5e2ced; --accent-ink: #ffffff; --accent-soft: #efe9ff;
   --g1: #1741c4; --g2: #0e8f8a; --g3: #f2b134; --g4: #d9455f;
   --font-display: "Bricolage Grotesque Variable", "Hanken Grotesk Variable", system-ui, sans-serif;
   --font-body: "Hanken Grotesk Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  --chrome: #f3f3f3; --chrome-line: #bdbdc4; --chrome-ink: #19192b; --chrome-btn: #ffffff; --chrome-btn-line: #cfcfdf; /* Engage's top bar and foot (T-3828) */
+  --chrome: #e2e1ea; --chrome-line: #c4c3d0; --chrome-ink: #19192b; --chrome-btn: #f7f7fa; --chrome-btn-line: #c4c3d0; /* the top bar and footer: light mode L3 (T-3838) */
+  --band: #efe9ff; --band-line: #d8cff5; /* the lavender band behind What we do, in both modes (T-3838) */
   --radius: 14px; --max: 1180px;
 }
 @media (prefers-color-scheme: dark) {
@@ -15,14 +16,14 @@
     --bg: #15121f; --surface: #1f1b2e; --ink: #f0ecfa; --ink-2: #c9c3dc; --ink-3: #978fb0; --line: #302b45;
     --tile: #2a2540; --tile-2: #332d4d; --accent: #a88bff; --accent-ink: #15121f; --accent-soft: #2a2347;
     --g1: #4c74f0; --g2: #2bb8b0; --g3: #f5c04d; --g4: #f0708a; color-scheme: dark;
-    --chrome: #1b1828; --chrome-line: #3d3755; --chrome-ink: #f0ecfa; --chrome-btn: #262238; --chrome-btn-line: #4a4463;
+    --chrome: #f3f3f3; --chrome-line: #bdbdc4; --chrome-ink: #19192b; --chrome-btn: #ffffff; --chrome-btn-line: #cfcfdf;
   }
 }
 :root[data-theme="dark"] {
   --bg: #15121f; --surface: #1f1b2e; --ink: #f0ecfa; --ink-2: #c9c3dc; --ink-3: #978fb0; --line: #302b45;
   --tile: #2a2540; --tile-2: #332d4d; --accent: #a88bff; --accent-ink: #15121f; --accent-soft: #2a2347;
   --g1: #4c74f0; --g2: #2bb8b0; --g3: #f5c04d; --g4: #f0708a; color-scheme: dark;
-  --chrome: #1b1828; --chrome-line: #3d3755; --chrome-ink: #f0ecfa; --chrome-btn: #262238; --chrome-btn-line: #4a4463;
+  --chrome: #f3f3f3; --chrome-line: #bdbdc4; --chrome-ink: #19192b; --chrome-btn: #ffffff; --chrome-btn-line: #cfcfdf;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -610,3 +611,10 @@ footer a, footer .legal, footer .hipaa, footer .cookie { color: var(--chrome-ink
 [lang="ar"] { --font-mono: system-ui, -apple-system, "Segoe UI", "Geeza Pro", "Noto Sans Arabic", Tahoma, sans-serif; --font-display: system-ui, -apple-system, "Segoe UI", "Geeza Pro", "Noto Sans Arabic", Tahoma, sans-serif; --font-body: system-ui, -apple-system, "Segoe UI", "Geeza Pro", "Noto Sans Arabic", Tahoma, sans-serif; }
 [lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3 { line-height: 1.3; letter-spacing: 0; }
 [lang="ar"] .mono { letter-spacing: 0; text-transform: none; }
+
+/* ---------- two tones (operator, 27 October 2026, T-3838; mock-up https://claude.ai/artifact/XiX7kkiNUMwowCA8ihCjhP, C for dark and L3 for light) ----------
+   Light mode: a lighter page, a slightly deeper grey top bar and footer, and What we do on a lavender band.
+   Dark mode: the page stays dark; the top bar, the footer and the What we do band stay light, so everything inside them takes the light tokens. */
+#what { background: var(--band); border-block: 1px solid var(--band-line); color: var(--ink); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) :is(.top, footer, #what) { --bg: #fafafc; --surface: #ffffff; --ink: #19192b; --ink-2: #4b4b66; --ink-3: #7d7d96; --line: #e4e4ee; --tile: #e8e6f3; --tile-2: #dedbee; --accent: #5e2ced; --accent-ink: #ffffff; --accent-soft: #efe9ff; --g1: #1741c4; --g2: #0e8f8a; --g3: #f2b134; --g4: #d9455f; color-scheme: light; } }
+:root[data-theme="dark"] :is(.top, footer, #what) { --bg: #fafafc; --surface: #ffffff; --ink: #19192b; --ink-2: #4b4b66; --ink-3: #7d7d96; --line: #e4e4ee; --tile: #e8e6f3; --tile-2: #dedbee; --accent: #5e2ced; --accent-ink: #ffffff; --accent-soft: #efe9ff; --g1: #1741c4; --g2: #0e8f8a; --g3: #f2b134; --g4: #d9455f; color-scheme: light; }
