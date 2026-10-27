@@ -1,7 +1,8 @@
 import type { Lang } from './legal-words.ts';
 import { CAPS, type Caps } from './caps-words.ts';
+import { SITE_JA, SITE_KO, SITE_PT } from './site-words-more.ts';
 
-/** The front page's words in four languages (operator, 26 October 2026, T-3821). English governs; Spanish, Hindi and Chinese were written by Claude and no native speaker has read them. A correction is one line here, or in lib/product-words.src.txt for the products' drawn screens.
+/** The front page's words in seven languages (operator, 26 October 2026, T-3821; Japanese, Korean and Portuguese in lib/site-words-more.ts, 27 October 2026, T-3829). English governs; every other language was written by Claude and no native speaker has read them. A correction is one line here, or in lib/product-words.src.txt for the products' drawn screens.
     The products' own names (Today, Engage, Sign…), the invented people and brands in examples, and the company's name are never translated. */
 
 export type Site = {
@@ -152,4 +153,7 @@ export const SITE: Record<Lang, Site> = {
     talk: { label: '联系我们', h: '告诉我们您需要什么。', lead: '可以是先用一款产品，在我们的产品上换成您自己的品牌，或者为您专门开发。请说明是哪一种，再简单介绍一下您的业务。', legend: '您在找什么？', kinds: ['一款产品', '白标版本', '定制软件'], nameL: '您的姓名', emailL: '工作邮箱', aboutL: '关于您的业务', send: '发送给 Tile Labs', needEmail: '请填写工作邮箱，以便我们回复。', ok: '您的邮件应用应会带着写好的内容打开。在您从那里发送之前，不会发出任何内容。' },
     demo: { close: '关闭演示', suits: '适合：', talkAbout: '就此联系我们', prev: '← 上一款产品', next: '下一款产品 →', example: '这是用虚构名称绘制的示例，不是真实产品。', videoAria: '{n} 演示视频，15 秒，无声', step: '第 {n} 步', pause: '暂停', play: '播放', signHere: '在此签名', paid: '已付款', seeDemo: '{n}，{tag}。观看演示。', wish: '我想看看 {n}。' },
   },
+  ja: SITE_JA,
+  ko: SITE_KO,
+  pt: SITE_PT,
 };
