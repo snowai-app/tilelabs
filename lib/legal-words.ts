@@ -3,13 +3,14 @@ import { COMPANY } from './company.ts';
 /** The company's privacy policy and terms in seven languages (operator, 26 October 2026, T-3820; Japanese, Korean and Portuguese added 27 October 2026, T-3829; Arabic, T-3832). English governs; the others are translated to the best of our ability, written by Claude and not yet read by a native speaker. A correction is one line here.
     A paragraph may hold {legal} {trading} {place} {uen} {line} (filled from lib/company.ts and the language's own words) and the link slots {mail} {privacy} {snowPrivacy} {snowTerms}, which the page draws as links. */
 
-export const LANGS = ['en', 'es', 'hi', 'zh', 'ja', 'ko', 'pt', 'ar'] as const;
+/** In the menu's order (operator, 27 October 2026, T-3835): English, Español, Arabic, Hindi, Chinese, Japanese, Korean, Português. */
+export const LANGS = ['en', 'es', 'ar', 'hi', 'zh', 'ja', 'ko', 'pt'] as const;
 export type Lang = (typeof LANGS)[number];
 export const isLang = (s: string): s is Lang => (LANGS as readonly string[]).includes(s);
 /** The menu's two columns (operator, 27 October 2026, T-3831: "when you write HI, I don't know; if I see Hindi, I'll know"). NAME, on the left, is in letters the reader can recognise: the language's own name when that is in Latin letters, else its English name. SHORT, on the right and on the bar's button, is the language in its own script, or its code when the name is already Latin. */
 export const SHORT: Record<Lang, string> = { en: 'EN', es: 'ES', hi: 'हिन्दी', zh: '中文', ja: '日本語', ko: '한국어', pt: 'PT', ar: 'العربية' };
 export const NAME: Record<Lang, string> = { en: 'English', es: 'Español', hi: 'Hindi', zh: 'Chinese', ja: 'Japanese', ko: 'Korean', pt: 'Português', ar: 'Arabic' };
-export const OTHER = ['es', 'hi', 'zh', 'ja', 'ko', 'pt', 'ar'] as const;
+export const OTHER = ['es', 'ar', 'hi', 'zh', 'ja', 'ko', 'pt'] as const;
 /** Arabic reads right to left (T-3832). */
 export const dirOf = (l: Lang) => (l === 'ar' ? 'rtl' : 'ltr');
 /** The html lang and hreflang code of a language (Chinese is Simplified). */
